@@ -6,13 +6,13 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D rb;
-    [SerializeField] private float speed;//Añadir speed
+    [SerializeField] private float speed=10;
 
     private Vector2 movementValue;
 
     public void OnMove(InputValue value)
     {
-        movementValue = value.Get<Vector2>(); //The values of x and y are read and saved in movementValue.
+        movementValue = value.Get<Vector2>(); 
         Debug.Log("Movimiento: " + movementValue);
 
     }
@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     {
 
         //Mover hacia adelante
-        Vector2 movimiento = new Vector2(movementValue.x, movementValue.y); //El vector almacena (0,0,1). 20 metros por segundo
+        Vector2 movimiento = new Vector2(movementValue.x, movementValue.y); 
         transform.Translate(movimiento * Time.deltaTime * speed);
     }
 }

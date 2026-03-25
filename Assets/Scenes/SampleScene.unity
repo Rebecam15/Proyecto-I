@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   rb: {fileID: 91790049}
-  speed: 0
+  speed: 10
 --- !u!114 &91790052
 MonoBehaviour:
   m_ObjectHideFlags: 0
