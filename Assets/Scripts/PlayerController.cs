@@ -18,8 +18,6 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-
-        //Mover hacia adelante
         Vector2 movimiento = new Vector2(movementValue.x, movementValue.y); 
         transform.Translate(movimiento * Time.deltaTime * speed);
     }
