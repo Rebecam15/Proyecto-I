@@ -14,17 +14,20 @@ public class SistemaVidas : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (vidas <= 0)
-        {
-            muerto = true;
-            Debug.Log("El personaje ha muerto");
-        }
+       
         if (collision.gameObject.CompareTag("Enemigo") && muerto==false)
         {
             vidas--;
             Debug.Log("El jugador ha chocado contra un enemigo");
+            if (vidas < 1)
+            {
+                muerto = true;
+                Debug.Log("El personaje está muerto");
+            }
         }
     }
+
+    
 
 }
 
