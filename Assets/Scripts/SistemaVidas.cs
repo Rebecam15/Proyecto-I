@@ -5,12 +5,15 @@ using UnityEngine.UIElements;
 
 public class SistemaVidas : MonoBehaviour
 {
-    [SerializeField] private int vidas = 3;
+    [SerializeField] private int numeroVidas = 3;
+    private int vidas;
+    
     public UIDocument uiDocument;
     private Label textoVidas;
 
     void Start()
     {
+        vidas = numeroVidas;
         textoVidas = uiDocument.rootVisualElement.Q<Label>("textoVidas");//.rootvisualElement da acceso al nivel más alto del contenedor de UI Layout. La Q busca el primer label con el nombre textoVidas.
        
         /* Para cambiarlo por corazones o algo así. Cambiar el laber por una imagen.
@@ -28,9 +31,9 @@ public class SistemaVidas : MonoBehaviour
            
             if (vidas <1)
             {
-                
-                GetComponent<PlayerRespawn>().Respawn();//Mueve al ugador al último checkpoint
-                vidas = 3;
+                vidas = numeroVidas;
+                GetComponent<PlayerRespawn>().Respawn();//Mueve al jugador al último checkpoint
+                textoVidas.text = "Vidas: " + vidas;
             } 
         }
     }
