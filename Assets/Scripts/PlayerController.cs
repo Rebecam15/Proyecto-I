@@ -11,11 +11,11 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 movementValue;
 
-    public void OnMove(InputValue value)
+    public void OnMove(InputValue value) //recibe el input y lo guarda en movementValue
     {
         movementValue = value.Get<Vector2>(); 
     }
-    void Update()
+    void Update() //Actualiza la posición cada frame
     {
     
             Vector2 movimiento = new Vector2(movementValue.x, movementValue.y);
