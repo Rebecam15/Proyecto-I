@@ -5,13 +5,15 @@ using UnityEngine.UIElements;
 
 public class SistemaVidas : MonoBehaviour
 {
-    [SerializeField] private int vidas=3;
-    public bool muerto= false;
+    [SerializeField] private int numeroVidas = 3;
+    private int vidas;
+    
     public UIDocument uiDocument;
     private Label textoVidas;
 
     void Start()
     {
+        vidas = numeroVidas;
         textoVidas = uiDocument.rootVisualElement.Q<Label>("textoVidas");//.rootvisualElement da acceso al nivel más alto del contenedor de UI Layout. La Q busca el primer label con el nombre textoVidas.
        
         /* Para cambiarlo por corazones o algo así. Cambiar el laber por una imagen.
@@ -22,16 +24,17 @@ public class SistemaVidas : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision) //Cuando colisiona
     {
        
-        if (collision.gameObject.CompareTag("Enemigo") && muerto==false) //Si está vivo y choca contra un enemigo
+        if (collision.gameObject.CompareTag("Enemigo") && vidas>0) //Si está vivo y choca contra un enemigo
         {
             vidas--;
             textoVidas.text = "Vidas: " + vidas;
-            Debug.Log("El jugador ha chocado contra un enemigo");
-            if (vidas < 1)
+           
+            if (vidas <1)
             {
-                muerto = true;
-                Debug.Log("El personaje está muerto");
-            }
+                vidas = numeroVidas;
+                GetComponent<PlayerRespawn>().Respawn();//Mueve al jugador al último checkpoint
+                textoVidas.text = "Vidas: " + vidas;
+            } 
         }
     }
 
