@@ -32,6 +32,7 @@ public class SistemaVidas : MonoBehaviour
             if (vidas <1)
             {
                 vidas = numeroVidas;
+                RecogerLuz.luces = 0;
                 GetComponent<PlayerRespawn>().Respawn();//Mueve al jugador al último checkpoint
                 textoVidas.text = "Vidas: " + vidas;
             } 

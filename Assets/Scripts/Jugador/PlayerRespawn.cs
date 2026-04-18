@@ -12,7 +12,7 @@ public class PlayerRespawn : MonoBehaviour
             transform.position = new Vector2(PlayerPrefs.GetFloat("checkPointPositionX"), PlayerPrefs.GetFloat("checkPointPositionY"));       
     }
     
-    public void ReachedCheckPoint(float x, float y)//Guarda la posición del último checkpoint al que se ha llegado
+    public void CheckPointAlcanzado(float x, float y)//Guarda la posición del último checkpoint al que se ha llegado
     {
         PlayerPrefs.SetFloat("checkPointPositionX",x);
         PlayerPrefs.SetFloat("checkPointPositionY", y);      
