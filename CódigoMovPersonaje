@@ -1,0 +1,83 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerMovement : MonoBehaviour
+{
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float jumpForce = 10f;
+
+    //Esto es para que detecte el suelo
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundCheckRadius = 0.2f;
+    [SerializeField] private LayerMask groundLayer;
+
+    private Rigidbody2D rb;
+    private Vector2 moveInput;
+    private PlayerControls controls;
+
+    private bool isGrounded;
+    private int jumpCount;
+    //Pongo una variable para los saltos y poder controlar el máximo que puede hacer el jugador
+    [SerializeField] private int maxJumps = 2; 
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        controls = new PlayerControls();
+
+        //Esto es para suscribirse al evento del salto
+        controls.Player.Jump.performed += ctx => Jump();
+    }
+
+    private void OnEnable() => controls.Player.Enable();
+    private void OnDisable() => controls.Player.Disable();
+
+    void Update()
+    {
+        //Esto es para el movimiento del jugador en horizontal
+        moveInput = controls.Player.Move.ReadValue<Vector2>();
+
+        //Función para ver si el personaje está tocando el suelo
+        CheckGround();
+    }
+
+    void FixedUpdate()
+    {
+        rb.velocity = new Vector2(moveInput.x * speed, rb.velocity.y);
+    }
+
+    private void Jump()
+    {
+        //Condición para el número de saltos
+        if (isGrounded || jumpCount < maxJumps)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            jumpCount++;
+        }
+    }
+
+    private void CheckGround()
+    {
+        //Se tendría que crear un área ue toque el suelo y esté siempre a la altura de los pies del personaje (en el tutorial usaba un círculo)
+        bool wasGrounded = isGrounded;
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+        //Esto es solo para reiniciar los saltos si el personaje toca el suelo
+        if (isGrounded)
+        {
+            jumpCount = 0;
+        }
+    }
+
+    //Esto sería para dibujar el círculo que detecta el suelo, pero no sé si es válido usar estas cosas
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.drawWireSphere(groundCheck.position, groundCheckRadius);
+        }
+    }
+}
