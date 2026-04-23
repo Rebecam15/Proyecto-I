@@ -7,7 +7,10 @@ public class ControladorDatos : MonoBehaviour
     public string ArchivoGuardado;
     public DatosGuardado datos= new DatosGuardado();
 
+    [SerializeField] private bool cargar;
+
     private int ComparadorCheckPoints = 1;
+
     private void Awake() //Al empezar
     {
         ArchivoGuardado = Application.dataPath + "/datosuego.json";
@@ -27,17 +30,20 @@ public class ControladorDatos : MonoBehaviour
 
     private void CargarDatos() //Carga la última posición guardada  
     {
-        if(File.Exists(ArchivoGuardado))
+        if (cargar == true)
         {
-            string contenido = File.ReadAllText(ArchivoGuardado);
-            datos= JsonUtility.FromJson<DatosGuardado>(contenido);
+            if (File.Exists(ArchivoGuardado))
+            {
+                string contenido = File.ReadAllText(ArchivoGuardado);
+                datos = JsonUtility.FromJson<DatosGuardado>(contenido);
 
-            Debug.Log("Posicion jugador" + datos.posicion);
-            player.transform.position=datos.posicion;
-        }
-        else
-        {
-            Debug.Log("El archivo no existe");
+                Debug.Log("Posicion jugador" + datos.posicion);
+                player.transform.position = datos.posicion;
+            }
+            else
+            {
+                Debug.Log("El archivo no existe");
+            }
         }
     }
 
