@@ -7,7 +7,9 @@ public class SistemaVidas : MonoBehaviour
 {
     [SerializeField] private int numeroVidas = 3;
     private int vidas;
-    
+    public GameObject luz;
+
+
     public UIDocument uiDocument;
     private Label textoVidas;
 
@@ -33,7 +35,19 @@ public class SistemaVidas : MonoBehaviour
             {
                 vidas = numeroVidas;
                 RecogerLuz.luces = 0;
-                GetComponent<PlayerRespawn>().Respawn();//Mueve al jugador al último checkpoint
+               
+
+                PlayerRespawn respawn = GetComponent<PlayerRespawn>();
+
+                if (respawn != null)
+                {
+                    respawn.Respawn(); //Mueve al jugador al último checkpoint
+                }
+                else
+                {
+                    Debug.LogError("No se encontró PlayerRespawn en este objeto");
+                }
+
                 textoVidas.text = "Vidas: " + vidas;
             } 
         }
