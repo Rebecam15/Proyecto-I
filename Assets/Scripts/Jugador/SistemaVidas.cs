@@ -34,7 +34,6 @@ public class SistemaVidas : MonoBehaviour
             if (vidas <1)
             {
                 vidas = numeroVidas;
-                RecogerLuz.luces = 0;
                
 
                 PlayerRespawn respawn = GetComponent<PlayerRespawn>();
