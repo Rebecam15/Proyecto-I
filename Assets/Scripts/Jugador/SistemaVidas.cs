@@ -5,8 +5,8 @@ using UnityEngine.UIElements;
 
 public class SistemaVidas : MonoBehaviour
 {
-    [SerializeField] private int numeroVidas = 3;
-    private int vidas;
+    [SerializeField] private int numeroInicialVidas = 3;
+    public static int vidas; //Vidas actuales del jugador
     public GameObject luz;
 
 
@@ -15,12 +15,17 @@ public class SistemaVidas : MonoBehaviour
 
     void Start()
     {
-        vidas = numeroVidas;
+        vidas = numeroInicialVidas;
         textoVidas = uiDocument.rootVisualElement.Q<Label>("textoVidas");//.rootvisualElement da acceso al nivel más alto del contenedor de UI Layout. La Q busca el primer label con el nombre textoVidas.
        
         /* Para cambiarlo por corazones o algo así. Cambiar el laber por una imagen.
          * var image = new Image();
            image.image = Resources.Load<Texture2D>("sample-image");*/
+    }
+
+    public static int NumeroVidas() //Develve cuántos checkpoints ha alcanzado
+    {
+        return vidas;
     }
 
     public void OnCollisionEnter2D(Collision2D collision) //Cuando colisiona
@@ -33,7 +38,7 @@ public class SistemaVidas : MonoBehaviour
            
             if (vidas <1)
             {
-                vidas = numeroVidas;
+                vidas = numeroInicialVidas;
                
 
                 PlayerRespawn respawn = GetComponent<PlayerRespawn>();
