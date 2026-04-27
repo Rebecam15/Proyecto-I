@@ -32,9 +32,9 @@ public class ControladorDatos : MonoBehaviour
         vidas = SistemaVidas.vidas;   
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)//Cuando el player colisiona con un Checkpoint
+    public void OnTriggerEnter2D(Collider2D collision)//Cuando el player colisiona con un objeto
     {
-        if (collision.gameObject.CompareTag("Checkpoint"))
+        if (collision.gameObject.CompareTag("Checkpoint"))//Si es un checkpoint
         {
             choqueCheckpoint = true;
             GuardarDatos();
@@ -55,20 +55,18 @@ public class ControladorDatos : MonoBehaviour
 
             player.transform.position = progreso.posicion;
             vidas = progreso.vidas;
-
-
-            Debug.Log("Progreso cargado");
     }
 
     private void GuardarDatos() //Guarda la posición del jugador en un archivo
     {
         Debug.Log("Numero Vidas actual" + vidas);
 
-        if(choqueCheckpoint==true)
+        if(choqueCheckpoint==true)//Solo guarda las posiciones cuando se choca con un checkpoint
         {
             progreso.posicion = player.transform.position;
             choqueCheckpoint = false;
         }
+
         vidas= SistemaVidas.vidas;
         progreso.vidas = vidas;
 
