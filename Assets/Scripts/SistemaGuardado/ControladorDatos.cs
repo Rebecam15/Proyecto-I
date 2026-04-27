@@ -6,14 +6,13 @@ public class ControladorDatos : MonoBehaviour
     public GameObject player;
     public ProgresoJuego progreso;
     private bool choqueCheckpoint = false;
-    int vidas;
+    public static int vidas;
 
     [SerializeField] private bool cargar;
 
 
     private void Awake() //Al empezar
     {
-        Debug.Log("Funciona!");
         progreso = new ProgresoJuego();
         
 
@@ -21,12 +20,16 @@ public class ControladorDatos : MonoBehaviour
         {
             CargarDatos();
         }
+        else
+        {
+            SistemaVidas.vidas = 3;
+            vidas = SistemaVidas.vidas;
+        }
     }
 
     public void Update()
     {
-        vidas=SistemaVidas.NumeroVidas();
-        
+        vidas = SistemaVidas.vidas;   
     }
 
     public void OnTriggerEnter2D(Collider2D collision)//Cuando el player colisiona con un Checkpoint
@@ -35,7 +38,6 @@ public class ControladorDatos : MonoBehaviour
         {
             choqueCheckpoint = true;
             GuardarDatos();
-            Debug.Log("Has pasado por un nuevo checkpoint");
         }
     }
 
@@ -60,14 +62,14 @@ public class ControladorDatos : MonoBehaviour
 
     private void GuardarDatos() //Guarda la posición del jugador en un archivo
     {
-        Debug.Log("Archivo guardado");
+        Debug.Log("Numero Vidas actual" + vidas);
 
         if(choqueCheckpoint==true)
         {
             progreso.posicion = player.transform.position;
             choqueCheckpoint = false;
         }
-        vidas= SistemaVidas.NumeroVidas();
+        vidas= SistemaVidas.vidas;
         progreso.vidas = vidas;
 
         string progresoJson = JsonUtility.ToJson(progreso); 

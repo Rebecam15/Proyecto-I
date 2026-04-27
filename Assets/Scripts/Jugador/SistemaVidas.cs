@@ -15,9 +15,13 @@ public class SistemaVidas : MonoBehaviour
 
     void Start()
     {
-        vidas = numeroInicialVidas;
+
+        vidas = ControladorDatos.vidas;
+        Debug.Log("VidasInicio" + vidas);
+
         textoVidas = uiDocument.rootVisualElement.Q<Label>("textoVidas");//.rootvisualElement da acceso al nivel más alto del contenedor de UI Layout. La Q busca el primer label con el nombre textoVidas.
-       
+        textoVidas.text = "Vidas: " + vidas;
+
         /* Para cambiarlo por corazones o algo así. Cambiar el laber por una imagen.
          * var image = new Image();
            image.image = Resources.Load<Texture2D>("sample-image");*/
