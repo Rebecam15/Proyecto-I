@@ -18044,8 +18044,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 199291260703642134, guid: 27b050a30e13a144b932a58f18c08041, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1125298986195603425}
   m_SourcePrefab: {fileID: 100100000, guid: 27b050a30e13a144b932a58f18c08041, type: 3}
+--- !u!1 &1125298986195603424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 199291260703642134, guid: 27b050a30e13a144b932a58f18c08041, type: 3}
+  m_PrefabInstance: {fileID: 1125298986195603423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1125298986195603425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125298986195603424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73cb2ac2db5fe074eb3c959a855537b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PatrullaNPC
+  velocidad: 3
+  tiempoParaCambiar: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
