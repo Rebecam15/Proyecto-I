@@ -1169,6 +1169,7 @@ GameObject:
   - component: {fileID: 91790054}
   - component: {fileID: 91790056}
   - component: {fileID: 91790055}
+  - component: {fileID: 91790057}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1247,7 +1248,8 @@ Transform:
   m_LocalPosition: {x: 4.49, y: -1.9213, z: 0}
   m_LocalScale: {x: 0.10912728, y: 0.11069738, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 222032746}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &91790049
@@ -1398,6 +1400,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
   areaInteraccion: 1
+--- !u!114 &91790057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91790046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6f6fa0bc567074f8eeca6d7091450c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DobleJump
+  fuerzaSalto: 0
+  suelo:
+    serializedVersion: 2
+    m_Bits: 64
+  controlSuelo: {fileID: 222032746}
+  distanciaRaycast: 0.2
 --- !u!1 &109572101
 GameObject:
   m_ObjectHideFlags: 0
@@ -2603,6 +2623,37 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &222032745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 222032746}
+  m_Layer: 0
+  m_Name: ControlSuelo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &222032746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222032745}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 91790048}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &232888810
 GameObject:
   m_ObjectHideFlags: 0
@@ -7822,7 +7873,7 @@ GameObject:
   - component: {fileID: 885033119}
   - component: {fileID: 885033121}
   - component: {fileID: 885033120}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16146,7 +16197,7 @@ GameObject:
   - component: {fileID: 1871761547}
   - component: {fileID: 1871761546}
   - component: {fileID: 1871761545}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
