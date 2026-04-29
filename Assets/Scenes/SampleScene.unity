@@ -1169,7 +1169,6 @@ GameObject:
   - component: {fileID: 91790054}
   - component: {fileID: 91790056}
   - component: {fileID: 91790055}
-  - component: {fileID: 91790057}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1292,7 +1291,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   rb: {fileID: 91790049}
-  speed: 15
+  speedX: 8
+  fuerzaSalto: 7
+  capaSuelo:
+    serializedVersion: 2
+    m_Bits: 64
+  controlSuelo: {fileID: 222032746}
+  distanciaRaycast: 0.1
 --- !u!114 &91790052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1400,24 +1405,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
   areaInteraccion: 1
---- !u!114 &91790057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 91790046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e6f6fa0bc567074f8eeca6d7091450c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DobleJump
-  fuerzaSalto: 0
-  suelo:
-    serializedVersion: 2
-    m_Bits: 64
-  controlSuelo: {fileID: 222032746}
-  distanciaRaycast: 0.2
 --- !u!1 &95530729
 GameObject:
   m_ObjectHideFlags: 0
@@ -2855,7 +2842,7 @@ Transform:
   m_GameObject: {fileID: 222032745}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.9, y: -8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3665,7 +3652,7 @@ GameObject:
   - component: {fileID: 280952050}
   - component: {fileID: 280952052}
   - component: {fileID: 280952051}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3803,7 +3790,7 @@ GameObject:
   - component: {fileID: 299282145}
   - component: {fileID: 299282147}
   - component: {fileID: 299282146}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4416,7 +4403,7 @@ GameObject:
   - component: {fileID: 379659091}
   - component: {fileID: 379659093}
   - component: {fileID: 379659092}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8245,7 +8232,7 @@ GameObject:
   - component: {fileID: 701745934}
   - component: {fileID: 701745933}
   - component: {fileID: 701745932}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Suelo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11576,8 +11563,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 119143716}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.366, y: 0}
+  m_AnchorMax: {x: 0.366, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -14157,7 +14144,7 @@ RectTransform:
   m_Father: {fileID: 1065976575}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.366, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -15394,7 +15381,7 @@ GameObject:
   - component: {fileID: 1318464911}
   - component: {fileID: 1318464913}
   - component: {fileID: 1318464912}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19319,7 +19306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1686369468
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21344,7 +21331,7 @@ GameObject:
   - component: {fileID: 1912147749}
   - component: {fileID: 1912147751}
   - component: {fileID: 1912147750}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
