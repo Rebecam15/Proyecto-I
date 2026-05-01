@@ -9,7 +9,7 @@ public class CheckPoint : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             PlayerRespawn respawn = collision.GetComponent<PlayerRespawn>();
-            RecogerLuz.luces = 0;
+            Debug.Log("Checkpoints alcanzados"+ CheckPointsAlcanzados);
           
 
             if (respawn != null) //Guarda la posición del último checkpoint 
