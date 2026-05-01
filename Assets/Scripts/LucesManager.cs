@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class LucesManager : MonoBehaviour
 {
+    //A medio hacer 
     enum Zona { Tutorial, Pueblo, Playa, Faro };
     Zona zonaActual;
 

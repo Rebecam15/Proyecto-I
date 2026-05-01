@@ -6,9 +6,9 @@ public class ControladorDatos : MonoBehaviour
     public GameObject player;
     public ProgresoJuego progreso;
     private bool choqueCheckpoint = false;
-    public static int vidas;
+    public static int vidas; //Para comparar con SistemaVidas.vidas
 
-    [SerializeField] private bool cargar;
+    [SerializeField] private bool cargar; //Para cargar o no
     private bool CheckpointInicio;
 
 
@@ -25,7 +25,7 @@ public class ControladorDatos : MonoBehaviour
         }
         else
         {
-            SistemaVidas.vidas = 3;
+            SistemaVidas.vidas = SistemaVidas.numeroInicialVidas;
             vidas = SistemaVidas.vidas;
         }
     }
@@ -42,7 +42,7 @@ public class ControladorDatos : MonoBehaviour
             if (collision.gameObject.CompareTag("Checkpoint"))//Si es un checkpoint
             {
                 choqueCheckpoint = true;
-                vidas = SistemaVidas.numeroInicialVidas;
+                vidas = SistemaVidas.numeroInicialVidas; //Reinicia el número de vidas al chocar con un checkpoint
                 SistemaVidas.vidas = vidas;
 
                 GuardarDatos();
