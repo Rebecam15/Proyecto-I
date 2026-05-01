@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 13c9d97d941aa8945a02e97df0c64c20
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - CPTutorial: {instanceID: 0}
+  - CPPueblo: {instanceID: 0}
+  - CPPlaya: {instanceID: 0}
+  - CPFaro: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

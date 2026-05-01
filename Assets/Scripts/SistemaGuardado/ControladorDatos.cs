@@ -4,60 +4,86 @@ using System.IO;
 public class ControladorDatos : MonoBehaviour
 {
     public GameObject player;
-    public string ArchivoGuardado;
-    public DatosGuardado datos= new DatosGuardado();
+    public ProgresoJuego progreso;
+    private bool choqueCheckpoint = false;
+    public static int vidas; //Para comparar con SistemaVidas.vidas
 
-    [SerializeField] private bool cargar;
+    [SerializeField] private bool cargar; //Para cargar o no
+    private bool CheckpointInicio;
 
-    private int ComparadorCheckPoints = 1;
 
     private void Awake() //Al empezar
     {
-        ArchivoGuardado = Application.dataPath + "/datosuego.json";
-        player= GameObject.FindGameObjectWithTag("Player");
-        CargarDatos();  
+        progreso = new ProgresoJuego();
+        CheckpointInicio = true;
+
+
+
+        if (cargar == true)
+        {
+            CargarDatos();
+        }
+        else
+        {
+            SistemaVidas.vidas = SistemaVidas.numeroInicialVidas;
+            vidas = SistemaVidas.vidas;
+        }
     }
 
-    private void Update()
+    public void Update()
     {
-       if(CheckPoint.CheckPointsAlcanzados==ComparadorCheckPoints) //Cada vez que el jugador alcanza un Checkpoint
+        vidas = SistemaVidas.vidas;   
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)//Cuando el player colisiona con un objeto
+    {
+        if(CheckpointInicio==false)
         {
-            GuardarDatos();
-            ComparadorCheckPoints++;     
+            if (collision.gameObject.CompareTag("Checkpoint"))//Si es un checkpoint
+            {
+                choqueCheckpoint = true;
+                vidas = SistemaVidas.numeroInicialVidas; //Reinicia el número de vidas al chocar con un checkpoint
+                SistemaVidas.vidas = vidas;
+
+                GuardarDatos();
+            }
         }
-     
+        else
+        {
+            CheckpointInicio = false;
+        }
+    }
+
+    private void OnDestroy() 
+    {
+        GuardarDatos(); 
     }
 
     private void CargarDatos() //Carga la última posición guardada  
     {
-        if (cargar == true)
-        {
-            if (File.Exists(ArchivoGuardado))
-            {
-                string contenido = File.ReadAllText(ArchivoGuardado);
-                datos = JsonUtility.FromJson<DatosGuardado>(contenido);
+       
+            if (!PlayerPrefs.HasKey("Progreso")) return; 
+            string json = PlayerPrefs.GetString("Progreso"); 
+            progreso = JsonUtility.FromJson<ProgresoJuego>(json);
 
-                Debug.Log("Posicion jugador" + datos.posicion);
-                player.transform.position = datos.posicion;
-            }
-            else
-            {
-                Debug.Log("El archivo no existe");
-            }
-        }
+            player.transform.position = progreso.posicion;
+            vidas = progreso.vidas;
     }
 
     private void GuardarDatos() //Guarda la posición del jugador en un archivo
     {
-        DatosGuardado nuevosDatos = new DatosGuardado()
+        Debug.Log("Numero Vidas actual" + vidas);
+
+        if(choqueCheckpoint==true)//Solo guarda las posiciones cuando se choca con un checkpoint
         {
-            posicion = player.transform.position
-        };
+            progreso.posicion = player.transform.position;
+            choqueCheckpoint = false;
+        }
 
-        string cadenaJSON= JsonUtility.ToJson(nuevosDatos);
-        File.WriteAllText(ArchivoGuardado, cadenaJSON);
+        vidas= SistemaVidas.vidas;
+        progreso.vidas = vidas;
 
-        Debug.Log("Archivo guardado");
-
+        string progresoJson = JsonUtility.ToJson(progreso); 
+        PlayerPrefs.SetString("Progreso", progresoJson); 
     }
 }
