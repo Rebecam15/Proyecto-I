@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7567183809408634323}
   - component: {fileID: 1159956657373509621}
   - component: {fileID: 7789277350230071102}
+  - component: {fileID: -4321216661459260148}
   m_Layer: 0
   m_Name: CheckPoint
   m_TagString: Checkpoint
@@ -151,3 +152,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-4321216661459260148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7085083012108583437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c9d97d941aa8945a02e97df0c64c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LucesManager
+  CPTutorial: {fileID: 0}
+  CPPueblo: {fileID: 0}
+  CPPlaya: {fileID: 0}
+  CPFaro: {fileID: 0}

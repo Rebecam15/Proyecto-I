@@ -720,7 +720,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197ba2b8d2810234ebd9b8a40068a2c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SistemaVidas
-  numeroInicialVidas: 3
   luz: {fileID: 3945696530146681452, guid: b15cac3190237754ca43048563cc1651, type: 3}
   uiDocument: {fileID: 1016964544}
 --- !u!70 &91790054
@@ -801,7 +800,7 @@ MonoBehaviour:
   progreso:
     vidas: 0
     posicion: {x: 0, y: 0, z: 0}
-  cargar: 1
+  cargar: 0
 --- !u!4 &114423337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8208397075167227769, guid: b15cac3190237754ca43048563cc1651, type: 3}

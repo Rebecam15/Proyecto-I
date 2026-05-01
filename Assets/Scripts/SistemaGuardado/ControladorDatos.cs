@@ -9,12 +9,15 @@ public class ControladorDatos : MonoBehaviour
     public static int vidas;
 
     [SerializeField] private bool cargar;
+    private bool CheckpointInicio;
 
 
     private void Awake() //Al empezar
     {
         progreso = new ProgresoJuego();
-        
+        CheckpointInicio = true;
+
+
 
         if (cargar == true)
         {
@@ -34,10 +37,20 @@ public class ControladorDatos : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)//Cuando el player colisiona con un objeto
     {
-        if (collision.gameObject.CompareTag("Checkpoint"))//Si es un checkpoint
+        if(CheckpointInicio==false)
         {
-            choqueCheckpoint = true;
-            GuardarDatos();
+            if (collision.gameObject.CompareTag("Checkpoint"))//Si es un checkpoint
+            {
+                choqueCheckpoint = true;
+                vidas = SistemaVidas.numeroInicialVidas;
+                SistemaVidas.vidas = vidas;
+
+                GuardarDatos();
+            }
+        }
+        else
+        {
+            CheckpointInicio = false;
         }
     }
 

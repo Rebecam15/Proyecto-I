@@ -10,7 +10,6 @@ public class CheckPoint : MonoBehaviour
         {
             PlayerRespawn respawn = collision.GetComponent<PlayerRespawn>();
             Debug.Log("Checkpoints alcanzados"+ CheckPointsAlcanzados);
-            SistemaVidas.vidas = SistemaVidas.numeroInicialVidas;
           
 
             if (respawn != null) //Guarda la posición del último checkpoint 
