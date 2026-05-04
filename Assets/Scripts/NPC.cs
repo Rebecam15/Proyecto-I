@@ -3,7 +3,7 @@ using UnityEngine;
 
 
 
-public class ConfiguracionNPC : MonoBehaviour
+public class PatrullaNPC : MonoBehaviour
 {
     public float velocidad = 3f;
 
