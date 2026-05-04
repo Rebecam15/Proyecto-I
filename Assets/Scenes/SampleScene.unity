@@ -1292,7 +1292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   rb: {fileID: 91790049}
   speedX: 6
-  fuerzaSalto: 6
+  fuerzaSalto: 5
   capaSuelo:
     serializedVersion: 2
     m_Bits: 64
