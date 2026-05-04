@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: e51ba3a9839255541a6a5b6f2d4b181d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5450011025078451072
+    second: personajesDef_0
+  - first:
+      213: 1432990878835328629
+    second: personajesDef_1
+  - first:
+      213: 1416511528957489873
+    second: personajesDef_2
+  - first:
+      213: -8052280629966163822
+    second: personajesDef_3
+  - first:
+      213: -214134032021355072
+    second: personajesDef_4
+  - first:
+      213: 6258197656535231567
+    second: personajesDef_5
+  - first:
+      213: -8365415105177873955
+    second: personajesDef_6
+  - first:
+      213: -1618441979634441085
+    second: personajesDef_7
+  - first:
+      213: 3873588757328077718
+    second: personajesDef_8
+  - first:
+      213: -4005619636263425670
+    second: personajesDef_9
+  - first:
+      213: 1827119031634957406
+    second: personajesDef_10
+  - first:
+      213: 1747251279028476203
+    second: personajesDef_11
+  - first:
+      213: -6759275204131336773
+    second: personajesDef_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: personajesDef_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 315
+        width: 315
+        height: 676
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b73c3e62452ab40800000000000000
+      internalID: 5450011025078451072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajesDef_1
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 321
+        width: 398
+        height: 652
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576ca5bac9103e310800000000000000
+      internalID: 1432990878835328629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajesDef_2
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 324
+        width: 256
+        height: 467
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2b1c70bb578a310800000000000000
+      internalID: 1416511528957489873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajesDef_3
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 320
+        width: 236
+        height: 663
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 290bb1b0e6d804090800000000000000
+      internalID: -8052280629966163822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajesDef_12
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 37
+        width: 329
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd45a6930b3232a0800000000000000
+      internalID: -6759275204131336773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 15889427ea17f9243b7e8f8f93a221d5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      personajesDef_0: 5450011025078451072
+      personajesDef_1: 1432990878835328629
+      personajesDef_10: 1827119031634957406
+      personajesDef_11: 1747251279028476203
+      personajesDef_12: -6759275204131336773
+      personajesDef_2: 1416511528957489873
+      personajesDef_3: -8052280629966163822
+      personajesDef_4: -214134032021355072
+      personajesDef_5: 6258197656535231567
+      personajesDef_6: -8365415105177873955
+      personajesDef_7: -1618441979634441085
+      personajesDef_8: 3873588757328077718
+      personajesDef_9: -4005619636263425670
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
