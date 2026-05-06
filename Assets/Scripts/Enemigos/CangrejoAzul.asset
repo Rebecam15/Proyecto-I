@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ConfCangrejo
   velocidad: 5.5
   tiempoParaCambiar: 2
-  colorNPC: {r: 1, g: 1, b: 1, a: 1}
+  colorNPC: {r: 0.13243146, g: 0.43251896, b: 0.9056604, a: 1}

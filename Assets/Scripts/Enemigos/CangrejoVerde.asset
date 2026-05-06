@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eae90f045d425c9448dd3eb7cbe12c2a, type: 3}
   m_Name: CangrejoVerde
   m_EditorClassIdentifier: Assembly-CSharp::ConfCangrejo
-  velocidad: 5
-  tiempoParaCambiar: 1
+  velocidad: 6
+  tiempoParaCambiar: 0.5
   colorNPC: {r: 0, g: 0.8113208, b: 0.032570023, a: 1}
