@@ -1,0 +1,2137 @@
+fileFormatVersion: 2
+guid: ed11bb10e5a8b1c4ba0f032e1ba8d13f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1672145844917374049
+    second: PlataformasGrandes2_0
+  - first:
+      213: -7609459189292307459
+    second: PlataformasGrandes2_1
+  - first:
+      213: -1130264587087271519
+    second: PlataformasGrandes2_2
+  - first:
+      213: -1626986347970595977
+    second: PlataformasGrandes2_3
+  - first:
+      213: -2687858898110850180
+    second: PlataformasGrandes2_4
+  - first:
+      213: -5111731139897418172
+    second: PlataformasGrandes2_5
+  - first:
+      213: 3153902184540512289
+    second: PlataformasGrandes2_6
+  - first:
+      213: 6844077958448894105
+    second: PlataformasGrandes2_7
+  - first:
+      213: 2428186076861244544
+    second: PlataformasGrandes2_8
+  - first:
+      213: -8804895115299540314
+    second: PlataformasGrandes2_9
+  - first:
+      213: 1932127855154925924
+    second: PlataformasGrandes2_10
+  - first:
+      213: 7939183148229611098
+    second: PlataformasGrandes2_11
+  - first:
+      213: -5720586761215503395
+    second: PlataformasGrandes2_12
+  - first:
+      213: 3672674634268966298
+    second: PlataformasGrandes2_13
+  - first:
+      213: -4767910068120730904
+    second: PlataformasGrandes2_14
+  - first:
+      213: 2524293995236113075
+    second: PlataformasGrandes2_15
+  - first:
+      213: 2746545666895834799
+    second: PlataformasGrandes2_16
+  - first:
+      213: 9142103325747295228
+    second: PlataformasGrandes2_17
+  - first:
+      213: 4455830635555025992
+    second: PlataformasGrandes2_18
+  - first:
+      213: 7906933410693746371
+    second: PlataformasGrandes2_19
+  - first:
+      213: 9094613352147046412
+    second: PlataformasGrandes2_20
+  - first:
+      213: 1670019692421929240
+    second: PlataformasGrandes2_21
+  - first:
+      213: 4134423851900610559
+    second: PlataformasGrandes2_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 108
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlataformasGrandes2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 972
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 0}
+        - {x: 54, y: 54}
+        - {x: 47, y: 52}
+        - {x: -54, y: -7}
+        - {x: -54, y: -40}
+        - {x: -46, y: -46}
+        - {x: -22, y: -44}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93fd05a6385bc8e0800000000000000
+      internalID: -1672145844917374049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 972
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb66691f25c56690800000000000000
+      internalID: -7609459189292307459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 972
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: -33}
+        - {x: 54, y: -7}
+        - {x: -50, y: 52}
+        - {x: -54, y: 54}
+        - {x: -53, y: -1}
+        - {x: 25, y: -44}
+        - {x: 45, y: -41}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9a570b85e7050f0800000000000000
+      internalID: -1130264587087271519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 972
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -48, y: 54}
+        - {x: -54, y: 51}
+        - {x: -54, y: 5}
+        - {x: -52, y: 2}
+        - {x: -49, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7737dc26988cb69e0800000000000000
+      internalID: -1626986347970595977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_4
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 972
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bdab3b29ec2bad0800000000000000
+      internalID: -2687858898110850180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_5
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 972
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 52}
+        - {x: 49, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e9c138c9b7f09b0800000000000000
+      internalID: -5111731139897418172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_6
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 972
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 30}
+        - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 28}
+        - {x: -51, y: 23}
+        - {x: -37, y: 0}
+        - {x: 34, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120add5a359e4cb20800000000000000
+      internalID: 3153902184540512289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_7
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 972
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 0}
+        - {x: 54, y: 54}
+        - {x: 49, y: 52}
+        - {x: -54, y: -9}
+        - {x: -52, y: -31}
+        - {x: -40, y: -39}
+        - {x: -24, y: -40}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9905d6844ac0bfe50800000000000000
+      internalID: 6844077958448894105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_8
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 972
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0842ddf2f56a2b120800000000000000
+      internalID: 2428186076861244544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_9
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 972
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: -31}
+        - {x: 53, y: -8}
+        - {x: 34, y: 3}
+        - {x: -50, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: -2}
+        - {x: 15, y: -40}
+        - {x: 38, y: -41}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2bffffa8abec580800000000000000
+      internalID: -8804895115299540314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 45, y: -4}
+        - {x: 54, y: 0}
+        - {x: 54, y: 54}
+        - {x: 43, y: 51}
+        - {x: -54, y: -7}
+        - {x: -54, y: -35}
+        - {x: -36, y: -50}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46195232c0c40da10800000000000000
+      internalID: 1932127855154925924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 864
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e4efc7205ad2e60800000000000000
+      internalID: 7939183148229611098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 864
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 53, y: -42}
+        - {x: 53, y: -6}
+        - {x: 46, y: -3}
+        - {x: -41, y: 52}
+        - {x: -49, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: -2}
+        - {x: 21, y: -46}
+        - {x: 45, y: -47}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd392fe46a46c90b0800000000000000
+      internalID: -5720586761215503395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_13
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 864
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -46, y: 54}
+        - {x: -54, y: 48}
+        - {x: -54, y: 7}
+        - {x: -44, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d70370f16f7f230800000000000000
+      internalID: 3672674634268966298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_14
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 864
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2c7a4fd0bf4ddb0800000000000000
+      internalID: -4767910068120730904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_15
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 864
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba33bea308180320800000000000000
+      internalID: 2524293995236113075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_16
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 864
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 7}
+        - {x: 54, y: 47}
+        - {x: 47, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 45, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: faee6b27bb0bd1620800000000000000
+      internalID: 2746545666895834799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_17
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 864
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 47, y: 21}
+        - {x: 54, y: 39}
+        - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 34}
+        - {x: -38, y: 0}
+        - {x: 37, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3b51fa9864fde70800000000000000
+      internalID: 9142103325747295228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_18
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 864
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 33}
+        - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 28}
+        - {x: -38, y: 0}
+        - {x: 38, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8447f83ea5a46dd30800000000000000
+      internalID: 4455830635555025992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_19
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 864
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 28}
+        - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 28}
+        - {x: -41, y: 1}
+        - {x: -34, y: 0}
+        - {x: 41, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce81175b021bbd60800000000000000
+      internalID: 7906933410693746371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 756
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 45, y: -4}
+        - {x: 54, y: 0}
+        - {x: 54, y: 54}
+        - {x: 43, y: 51}
+        - {x: -54, y: -7}
+        - {x: -54, y: -35}
+        - {x: -36, y: -50}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00df3098ae863e70800000000000000
+      internalID: 9094613352147046412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_21
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 756
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81957b6ef0a1d2710800000000000000
+      internalID: 1670019692421929240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_22
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 756
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 51, y: -7}
+        - {x: -46, y: 51}
+        - {x: -54, y: 54}
+        - {x: -54, y: -3}
+        - {x: -28, y: -17}
+        - {x: 29, y: -48}
+        - {x: 51, y: -38}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff72073969c606930800000000000000
+      internalID: 4134423851900610559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_23
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 756
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -44, y: 54}
+        - {x: -53, y: 44}
+        - {x: -53, y: 3}
+        - {x: -46, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01747a973fdce941ac50d8500afc0f5
+      internalID: 65287632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_24
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 756
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 53, y: 6}
+        - {x: 53, y: 43}
+        - {x: 46, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 51, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225e2124077b3a2479b1b825c75bee90
+      internalID: 1308976941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_25
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 756
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -45, y: 54}
+        - {x: -52, y: 45}
+        - {x: -52, y: 8}
+        - {x: -45, y: 3}
+        - {x: 54, y: 3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6623b9d40cf890146b0c4b82fc17dbf8
+      internalID: 230344175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_26
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 756
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: 7}
+        - {x: 52, y: 46}
+        - {x: 44, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 3}
+        - {x: 51, y: 3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619e317357e20d343862771b8bfc4c2c
+      internalID: 1447431364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_27
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 756
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 45, y: -4}
+        - {x: 54, y: 0}
+        - {x: 54, y: 54}
+        - {x: 44, y: 50}
+        - {x: -54, y: -9}
+        - {x: -54, y: -34}
+        - {x: -30, y: -45}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7dc2124e0728bd4c80a2a642536a75b
+      internalID: -275243866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_28
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 756
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540c974151e66dd45bb79d921c073a3e
+      internalID: 1832927676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_29
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 756
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: -28}
+        - {x: 54, y: -8}
+        - {x: 50, y: -5}
+        - {x: -49, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: -1}
+        - {x: 19, y: -42}
+        - {x: 25, y: -44}
+        - {x: 43, y: -44}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915778a3d31a3e243b5ef27c4c6b1d52
+      internalID: -1607772309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 45, y: -4}
+        - {x: 54, y: 0}
+        - {x: 54, y: 54}
+        - {x: 43, y: 51}
+        - {x: -54, y: -7}
+        - {x: -54, y: -35}
+        - {x: -36, y: -50}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f872606020962a4ba917667667fe8f0
+      internalID: -641937082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_31
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 648
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 0}
+        - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d50b06835cefa845b3019b4de8e8d89
+      internalID: 1433122283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_32
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 648
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: -42}
+        - {x: 54, y: -8}
+        - {x: 8, y: 21}
+        - {x: -47, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: -1}
+        - {x: 22, y: -46}
+        - {x: 52, y: -46}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e1919bef842a5458a29488b5e726f1
+      internalID: 291559497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_33
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 648
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -41, y: 54}
+        - {x: -45, y: 53}
+        - {x: -53, y: 47}
+        - {x: -53, y: 3}
+        - {x: -52, y: 1}
+        - {x: 54, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47265d63377c48643b80a18a7d68ecb0
+      internalID: 1765857647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_34
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 648
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: 9}
+        - {x: 52, y: 49}
+        - {x: 46, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 1}
+        - {x: 51, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9bbbfc5aa4b16f42b73d8c5324aa926
+      internalID: -14291870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_35
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 648
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -45, y: 54}
+        - {x: -52, y: 45}
+        - {x: -52, y: 8}
+        - {x: -50, y: 4}
+        - {x: -46, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1065b6fcb5ecbc489eee5d2c86bc54a
+      internalID: -1005193783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_36
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 648
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: 2}
+        - {x: 52, y: 48}
+        - {x: 49, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 45, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44dacd2a6706f7d4fafddc5a30db3dcc
+      internalID: 2032754610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_37
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 648
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: -2}
+        - {x: 54, y: 54}
+        - {x: 45, y: 52}
+        - {x: -54, y: -8}
+        - {x: -54, y: -32}
+        - {x: -43, y: -43}
+        - {x: -19, y: -43}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cd19358b646b643962ba5fedb5ed2a
+      internalID: 644723042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_38
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 648
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 20, y: -1}
+        - {x: 54, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508845a4329a0f342812c8aa6396a46d
+      internalID: 1713373358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_39
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 648
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 42, y: -41}
+        - {x: 54, y: -30}
+        - {x: 54, y: -6}
+        - {x: -40, y: 49}
+        - {x: -49, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: -2}
+        - {x: 17, y: -42}
+        - {x: 36, y: -42}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689079051915ed9479907463ba9c4a78
+      internalID: 1107997023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 45, y: -4}
+        - {x: 54, y: 0}
+        - {x: 54, y: 54}
+        - {x: 43, y: 51}
+        - {x: -54, y: -7}
+        - {x: -54, y: -35}
+        - {x: -36, y: -50}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d268c288b3e5e9342a2b07930a7f975a
+      internalID: 177432168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_41
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 540
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a69f92901bf9da42aea30d51ad3001b
+      internalID: -1257914330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_42
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 540
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: -34}
+        - {x: 54, y: -9}
+        - {x: -50, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: -1}
+        - {x: 23, y: -42}
+        - {x: 42, y: -46}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0145d02cdcf9e554ab11e98a1ebe6697
+      internalID: -2051937786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_43
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 540
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -47, y: 54}
+        - {x: -53, y: 53}
+        - {x: -53, y: -2}
+        - {x: -50, y: -3}
+        - {x: 54, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea91cd6a95f3fe4db5b1dd43dde1b4e
+      internalID: 888667186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_44
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 540
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 50, y: -1}
+        - {x: 52, y: 2}
+        - {x: 52, y: 45}
+        - {x: 49, y: 50}
+        - {x: 45, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: -3}
+        - {x: 47, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75f51844aeedb0439f94f67ed1b17b9
+      internalID: -289530426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_45
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 540
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -42, y: 54}
+        - {x: -50, y: 46}
+        - {x: -50, y: 6}
+        - {x: -42, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a0d801fe985e044ab7dc6b73ebb1d4
+      internalID: -1413366787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_46
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 540
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 52, y: 1}
+        - {x: 52, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 50, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f573cdd970b7cce4ab0c070517276209
+      internalID: 1071981207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_47
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 540
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 45, y: -4}
+        - {x: 54, y: 0}
+        - {x: 54, y: 54}
+        - {x: 43, y: 51}
+        - {x: -54, y: -7}
+        - {x: -54, y: -35}
+        - {x: -36, y: -50}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f142cf70542ec445b180180574e243f
+      internalID: 480264291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_48
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 540
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 20, y: -1}
+        - {x: 54, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f33f9f178dfed74eb46f58986e3dd7e
+      internalID: -369131084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_49
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 540
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 51, y: -38}
+        - {x: 54, y: -23}
+        - {x: 54, y: -7}
+        - {x: -24, y: 38}
+        - {x: -52, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: -1}
+        - {x: 20, y: -43}
+        - {x: 45, y: -43}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fd09f1a4a45fa4e90123d69b4146eb
+      internalID: -1600118864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_50
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 432
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 25}
+        - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 32}
+        - {x: -38, y: 0}
+        - {x: 39, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1024646e55fe1b647879626e6296463d
+      internalID: -1703768875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_51
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 432
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 32}
+        - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 29}
+        - {x: -52, y: 26}
+        - {x: -35, y: 0}
+        - {x: 38, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb423ff59b483649bc0e6cc6ca15f0a
+      internalID: 1226447180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_52
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 432
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -44, y: 54}
+        - {x: -51, y: 44}
+        - {x: -52, y: 38}
+        - {x: -52, y: 24}
+        - {x: -51, y: 8}
+        - {x: -48, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3550de9854e58bb4b89be64a62131229
+      internalID: -1057393813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_53
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 432
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 49, y: 4}
+        - {x: 52, y: 19}
+        - {x: 52, y: 45}
+        - {x: 51, y: 49}
+        - {x: 41, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 42, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aabffd7c2f6c0e45983a3d671c88511
+      internalID: -1007395675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_54
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 432
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 45, y: -4}
+        - {x: 54, y: 0}
+        - {x: 54, y: 54}
+        - {x: 43, y: 51}
+        - {x: -54, y: -7}
+        - {x: -54, y: -35}
+        - {x: -36, y: -50}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b861650156f884418a2ef184e5369da
+      internalID: -2022055468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_55
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 432
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 0}
+        - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09985a86f34748743a31441d8c10f827
+      internalID: 1017321544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_56
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 432
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: -31}
+        - {x: 53, y: -6}
+        - {x: -47, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: -1}
+        - {x: 11, y: -39}
+        - {x: 34, y: -46}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ee7eedff747134a9fbb5c89878b23b
+      internalID: 665401734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_57
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 324
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 26}
+        - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 29}
+        - {x: -46, y: 0}
+        - {x: 38, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2baa558c8edd22344a9c4189753890ca
+      internalID: -1005482223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_58
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 324
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 48, y: 21}
+        - {x: 54, y: 29}
+        - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 30}
+        - {x: -37, y: 0}
+        - {x: 36, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8187f85d59792bd4485724ba9ed424d6
+      internalID: -255094528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_59
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 324
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: 54}
+        - {x: -46, y: 54}
+        - {x: -53, y: 46}
+        - {x: -53, y: 5}
+        - {x: -43, y: 0}
+        - {x: 54, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770002103e5d42c46a9ab1de1378ada7
+      internalID: 1682874151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_60
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 324
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 53, y: 7}
+        - {x: 53, y: 47}
+        - {x: 47, y: 51}
+        - {x: 41, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 0}
+        - {x: 51, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b277e326d120af40837ef8aeab48b08
+      internalID: 121104108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_61
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 216
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 46, y: 17}
+        - {x: 54, y: 29}
+        - {x: 54, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 29}
+        - {x: -36, y: 0}
+        - {x: 37, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6abd1cdca30449144b1600d6a444848f
+      internalID: 1939922810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_62
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 216
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: -17}
+        - {x: 20, y: -3}
+        - {x: -19, y: 25}
+        - {x: -52, y: 54}
+        - {x: -54, y: 54}
+        - {x: -54, y: 16}
+        - {x: -41, y: 5}
+        - {x: -28, y: -5}
+        - {x: -9, y: -18}
+        - {x: -1, y: -23}
+        - {x: 27, y: -37}
+        - {x: 52, y: -47}
+        - {x: 54, y: -47}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73afb4f7022becf41a36be87db38d00c
+      internalID: 1601841739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_63
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 216
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 54, y: -28}
+        - {x: 10, y: -30}
+        - {x: -25, y: -27}
+        - {x: -54, y: -18}
+        - {x: -54, y: -53}
+        - {x: -36, y: -54}
+        - {x: 54, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930b3b484e144bc44989077b8e2a4863
+      internalID: 859368621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_64
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 108
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 39, y: -53}
+        - {x: 53, y: -49}
+        - {x: 54, y: -47}
+        - {x: 54, y: -18}
+        - {x: 43, y: -21}
+        - {x: 13, y: -28}
+        - {x: -21, y: -31}
+        - {x: -54, y: -29}
+        - {x: -54, y: -54}
+        - {x: 31, y: -54}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5291d84ce38c91348af4fadafdfed74c
+      internalID: -1345002272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasGrandes2_65
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 108
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 19, y: -13}
+        - {x: 53, y: 15}
+        - {x: 54, y: 54}
+        - {x: 51, y: 54}
+        - {x: 10, y: 18}
+        - {x: -33, y: -9}
+        - {x: -54, y: -17}
+        - {x: -54, y: -47}
+        - {x: -31, y: -40}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cac9e452af1264382b1e331797842a
+      internalID: 28995800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 41e51ba0489d59a478dd90718eb25b39
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":108.0,"y":108.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      PlataformasGrandes2_0: -1672145844917374049
+      PlataformasGrandes2_1: -7609459189292307459
+      PlataformasGrandes2_10: 1932127855154925924
+      PlataformasGrandes2_11: 7939183148229611098
+      PlataformasGrandes2_12: -5720586761215503395
+      PlataformasGrandes2_13: 3672674634268966298
+      PlataformasGrandes2_14: -4767910068120730904
+      PlataformasGrandes2_15: 2524293995236113075
+      PlataformasGrandes2_16: 2746545666895834799
+      PlataformasGrandes2_17: 9142103325747295228
+      PlataformasGrandes2_18: 4455830635555025992
+      PlataformasGrandes2_19: 7906933410693746371
+      PlataformasGrandes2_2: -1130264587087271519
+      PlataformasGrandes2_20: 9094613352147046412
+      PlataformasGrandes2_21: 1670019692421929240
+      PlataformasGrandes2_22: 4134423851900610559
+      PlataformasGrandes2_23: 65287632
+      PlataformasGrandes2_24: 1308976941
+      PlataformasGrandes2_25: 230344175
+      PlataformasGrandes2_26: 1447431364
+      PlataformasGrandes2_27: -275243866
+      PlataformasGrandes2_28: 1832927676
+      PlataformasGrandes2_29: -1607772309
+      PlataformasGrandes2_3: -1626986347970595977
+      PlataformasGrandes2_30: -641937082
+      PlataformasGrandes2_31: 1433122283
+      PlataformasGrandes2_32: 291559497
+      PlataformasGrandes2_33: 1765857647
+      PlataformasGrandes2_34: -14291870
+      PlataformasGrandes2_35: -1005193783
+      PlataformasGrandes2_36: 2032754610
+      PlataformasGrandes2_37: 644723042
+      PlataformasGrandes2_38: 1713373358
+      PlataformasGrandes2_39: 1107997023
+      PlataformasGrandes2_4: -2687858898110850180
+      PlataformasGrandes2_40: 177432168
+      PlataformasGrandes2_41: -1257914330
+      PlataformasGrandes2_42: -2051937786
+      PlataformasGrandes2_43: 888667186
+      PlataformasGrandes2_44: -289530426
+      PlataformasGrandes2_45: -1413366787
+      PlataformasGrandes2_46: 1071981207
+      PlataformasGrandes2_47: 480264291
+      PlataformasGrandes2_48: -369131084
+      PlataformasGrandes2_49: -1600118864
+      PlataformasGrandes2_5: -5111731139897418172
+      PlataformasGrandes2_50: -1703768875
+      PlataformasGrandes2_51: 1226447180
+      PlataformasGrandes2_52: -1057393813
+      PlataformasGrandes2_53: -1007395675
+      PlataformasGrandes2_54: -2022055468
+      PlataformasGrandes2_55: 1017321544
+      PlataformasGrandes2_56: 665401734
+      PlataformasGrandes2_57: -1005482223
+      PlataformasGrandes2_58: -255094528
+      PlataformasGrandes2_59: 1682874151
+      PlataformasGrandes2_6: 3153902184540512289
+      PlataformasGrandes2_60: 121104108
+      PlataformasGrandes2_61: 1939922810
+      PlataformasGrandes2_62: 1601841739
+      PlataformasGrandes2_63: 859368621
+      PlataformasGrandes2_64: -1345002272
+      PlataformasGrandes2_65: 28995800
+      PlataformasGrandes2_7: 6844077958448894105
+      PlataformasGrandes2_8: 2428186076861244544
+      PlataformasGrandes2_9: -8804895115299540314
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
