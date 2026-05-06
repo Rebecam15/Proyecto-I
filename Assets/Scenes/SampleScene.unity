@@ -1340,7 +1340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197ba2b8d2810234ebd9b8a40068a2c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SistemaVidas
-  numeroVidas: 3
   luz: {fileID: 3945696530146681452, guid: b15cac3190237754ca43048563cc1651, type: 3}
   uiDocument: {fileID: 1016964544}
 --- !u!70 &91790054
@@ -12558,7 +12557,7 @@ CompositeCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
@@ -41023,8 +41022,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControladorDatos
   player: {fileID: 91790046}
-  ArchivoGuardado: 
-  datos:
+  progreso:
+    vidas: 0
     posicion: {x: 0, y: 0, z: 0}
   cargar: 1
 --- !u!4 &1825828033
