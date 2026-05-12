@@ -2480,7 +2480,7 @@ MonoBehaviour:
   progreso:
     vidas: 0
     posicion: {x: 0, y: 0, z: 0}
-  cargar: 0
+  cargar: 1
 --- !u!1 &95530729
 GameObject:
   m_ObjectHideFlags: 0

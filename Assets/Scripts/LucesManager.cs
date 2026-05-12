@@ -6,24 +6,22 @@ public class LucesManager : MonoBehaviour
     enum Zona { Tutorial, Pueblo, Playa, Faro };
     Zona zonaActual;
 
-    public GameObject CPTutorial;
-    public GameObject CPPueblo;
-    public GameObject CPPlaya;
-    public GameObject CPFaro;
-
     private GameObject ultimoCP;
 
     void Start()
     {
         zonaActual = Zona.Tutorial;
-        ultimoCP= CPTutorial;
+       // ultimoCP= CPTutorial;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)//Cuando el ckeckpoint colisione con un objeto de tag player
     {
         if (collision.gameObject.CompareTag("Player"))
-        {
-           zonaActual= ReverseDirection(zonaActual);
+        { 
+            if (PlayerRespawn.mismoCP == false)
+            {
+                zonaActual = ReverseDirection(zonaActual);
+            }
             Debug.Log(zonaActual);
         }
     }

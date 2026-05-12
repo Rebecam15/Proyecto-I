@@ -1,9 +1,12 @@
 using UnityEngine;
 using System.IO;
+using Unity.VisualScripting;
 
 public class ControladorDatos : MonoBehaviour
 {
     public GameObject player;
+    private Vector2 posInicio = new Vector2(-30, -7);
+
     public ProgresoJuego progreso;
     private bool choqueCheckpoint = false;
     public static int vidas; //Para comparar con SistemaVidas.vidas
@@ -18,15 +21,16 @@ public class ControladorDatos : MonoBehaviour
         CheckpointInicio = true;
 
 
-
         if (cargar == true)
         {
             CargarDatos();
         }
-        else
+        else //Si no se carga nada, las vidas son igual a 3
         {
             SistemaVidas.vidas = SistemaVidas.numeroInicialVidas;
             vidas = SistemaVidas.vidas;
+            progreso.posicion = posInicio;//Creo que esta línea es innecesaria
+            player.transform.position = posInicio;
         }
     }
 

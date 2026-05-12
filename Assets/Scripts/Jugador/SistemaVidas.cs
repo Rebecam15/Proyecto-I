@@ -44,7 +44,7 @@ public class SistemaVidas : MonoBehaviour
         }
     }
 
-    public void OnTriggerStay2D(Collider2D other)
+    public void OnTriggerExits2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Agua"))
         {
