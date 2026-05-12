@@ -19,7 +19,7 @@ public class ControladorDatos : MonoBehaviour
     private void Awake() //Al empezar
     {
         progreso = new ProgresoJuego();
-        cargar = true; 
+        cargar = false;
 
         if (cargar == true)
         {
