@@ -2401,7 +2401,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197ba2b8d2810234ebd9b8a40068a2c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SistemaVidas
-  luz: {fileID: 3945696530146681452, guid: b15cac3190237754ca43048563cc1651, type: 3}
   uiDocument: {fileID: 1016964544}
 --- !u!70 &91790054
 CapsuleCollider2D:
@@ -13795,7 +13794,7 @@ GameObject:
   - component: {fileID: 551063117}
   m_Layer: 0
   m_Name: Tilemap_Water
-  m_TagString: Untagged
+  m_TagString: Agua
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

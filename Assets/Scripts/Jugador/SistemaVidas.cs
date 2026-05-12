@@ -7,7 +7,6 @@ public class SistemaVidas : MonoBehaviour
 {
     [SerializeField] public static int numeroInicialVidas = 3;
     public static int vidas; //Vidas actuales del jugador
-    public GameObject luz;
 
 
     public UIDocument uiDocument;
@@ -40,25 +39,36 @@ public class SistemaVidas : MonoBehaviour
            
             if (vidas <1)
             {
-                vidas = numeroInicialVidas;  
-
-                PlayerRespawn respawn = GetComponent<PlayerRespawn>();
-
-                if (respawn != null)
-                {
-                    respawn.Respawn(); //Mueve al jugador al último checkpoint
-                }
-                else
-                {
-                    Debug.LogError("No se encontró PlayerRespawn en este objeto");
-                }
-
-               
+                MuerteJugador();  
             } 
         }
     }
 
-    
+    public void OnTriggerStay2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Agua"))
+        {
+            Debug.Log("aguaaa");
+            MuerteJugador();
+        }
+    }
+
+    public void MuerteJugador()
+    {
+        vidas = numeroInicialVidas;
+
+        PlayerRespawn respawn = GetComponent<PlayerRespawn>();
+
+        if (respawn != null)
+        {
+            respawn.Respawn(); //Mueve al jugador al último checkpoint
+        }
+        else
+        {
+            Debug.LogError("No se encontró PlayerRespawn en este objeto");
+        }
+
+    }
 
 }
 
