@@ -12,7 +12,7 @@ public class ControladorDatos : MonoBehaviour
     private bool choqueCheckpoint;
     public static int vidas; //Para comparar con SistemaVidas.vidas
 
-    [SerializeField] private bool cargar; //Para cargar o no
+   private bool cargar; //Para cargar o no
 
 
 
@@ -46,7 +46,6 @@ public class ControladorDatos : MonoBehaviour
         
             if (collision.gameObject.CompareTag("Checkpoint"))//Si es un checkpoint
             {
-
                 vidas = SistemaVidas.numeroInicialVidas; //Reinicia el número de vidas al chocar con un checkpoint
                 SistemaVidas.vidas = vidas;
                 choqueCheckpoint = true;
@@ -62,7 +61,6 @@ public class ControladorDatos : MonoBehaviour
 
     private void CargarDatos() //Carga la última posición guardada  
     {
-
             if (!PlayerPrefs.HasKey("Progreso")) return; 
             string json = PlayerPrefs.GetString("Progreso"); 
             progreso = JsonUtility.FromJson<ProgresoJuego>(json);
@@ -74,7 +72,7 @@ public class ControladorDatos : MonoBehaviour
 
     private void GuardarDatos() //Guarda la posición del jugador en un archivo
     {
-        Debug.Log("Numero Vidas actual" + vidas);
+        Debug.Log("Guardando...");
 
         if(choqueCheckpoint==true)//Solo guarda las posiciones cuando se choca con un checkpoint
         {
