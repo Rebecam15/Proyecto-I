@@ -19,24 +19,28 @@ public class NPCharacter : MonoBehaviour, IInteractable
 
     public bool PuedeInteractuar(GameObject objetoInteractuar)
     {
-        return !dialogueActive;
+        return true;
     }
 
     public void Interactuar(GameObject objetoInteractuar)
     {
         Debug.Log("Interactuando");
-        if (dialogueData == null || !dialogueActive)
+
+        if (dialogueData == null )
         {
+            Debug.Log("dialogonull");
             return;
         }
 
 
         if (dialogueActive)
         {
+            Debug.Log("activo");
             NextLine();
         }
         else
         {
+            Debug.Log("start");
             StartDialogue();
         }
     }
@@ -44,6 +48,7 @@ public class NPCharacter : MonoBehaviour, IInteractable
 
     void StartDialogue()
     {
+
         dialogueActive = true;
         indexDialogue = 0;
 

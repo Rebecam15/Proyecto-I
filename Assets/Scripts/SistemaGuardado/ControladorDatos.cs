@@ -12,14 +12,14 @@ public class ControladorDatos : MonoBehaviour
     private bool choqueCheckpoint;
     public static int vidas; //Para comparar con SistemaVidas.vidas
 
-   private bool cargar; //Para cargar o no
+    [SerializeField] private bool cargar=true; //Para cargar o no
 
 
 
     private void Awake() //Al empezar
     {
         progreso = new ProgresoJuego();
-        cargar = false;
+     
 
         if (cargar == true)
         {
@@ -54,18 +54,19 @@ public class ControladorDatos : MonoBehaviour
 
     }
 
-    private void OnDestroy() 
+   /*private void OnDestroy() 
     {
         GuardarDatos(); 
     }
-
+   */
     private void CargarDatos() //Carga la última posición guardada  
     {
             if (!PlayerPrefs.HasKey("Progreso")) return; 
             string json = PlayerPrefs.GetString("Progreso"); 
             progreso = JsonUtility.FromJson<ProgresoJuego>(json);
+        Debug.Log(json);
 
-            player.transform.position = progreso.posicion;
+        player.transform.position = progreso.posicion;
             vidas = progreso.vidas;
             LucesManager.zonaActual = progreso.zonaAnterior;//Se cambia a la zona anterior porque, al empezar en un chechpoint, se suma una zona al colisionar con él.
     }
@@ -84,7 +85,9 @@ public class ControladorDatos : MonoBehaviour
         progreso.vidas = vidas;
         progreso.zonaAnterior = LucesManager.zonaAnterior;
 
-        string progresoJson = JsonUtility.ToJson(progreso); 
+ 
+        string progresoJson = JsonUtility.ToJson(progreso);
+        Debug.Log(progresoJson);
         PlayerPrefs.SetString("Progreso", progresoJson); 
     }
 }
