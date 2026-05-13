@@ -49,6 +49,12 @@ TagManager:
   - name: sky
     uniqueID: 871998659
     locked: 0
+  - name: Nubes 2
+    uniqueID: 4102618021
+    locked: 0
+  - name: Nubes 1
+    uniqueID: 2621713627
+    locked: 0
   - name: background
     uniqueID: 1028357819
     locked: 0
