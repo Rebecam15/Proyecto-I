@@ -1,26 +1,28 @@
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+  public class GameManager : Singleton<GameManager>
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private static bool inicio;
-    public void Awake()
+
+    private int _lucesRecogidas;
+
+ 
+
+    public int GetLucesRecogidas()
     {
-        inicio= true;   
-    }
-    void Start()
-    {
-       inicio = false;
+        return _lucesRecogidas;
     }
 
-    // Update is called once per frame
-    void Update()
+    public event Action<int> CambioVidas;
+    public event Action<int> CambioLuces;
+
+    private void SetLucesRecogidas(int luces)
     {
-        
+        _lucesRecogidas = luces;
+        CambioLuces?.Invoke(_lucesRecogidas);
     }
 
-    public static bool EsInicio()
-    {
-        return true;
-    }
+
+
 }

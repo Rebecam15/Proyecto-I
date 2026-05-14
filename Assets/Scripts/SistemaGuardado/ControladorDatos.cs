@@ -5,9 +5,9 @@ using Unity.VisualScripting;
 public class ControladorDatos : MonoBehaviour
 {
     public GameObject player;
+    [SerializeField] private int numeroInicialVidas = 3;
 
     public ProgresoJuego progreso;
-   // public static int vidas; //Para comparar con SistemaVidas.vidas
 
     [SerializeField] private bool cargar=false; //Para cargar o no
 
@@ -16,6 +16,7 @@ public class ControladorDatos : MonoBehaviour
     private void Awake() //Al empezar
     {
         progreso = new ProgresoJuego();
+  
 
         if (cargar == true)
         {
@@ -23,13 +24,13 @@ public class ControladorDatos : MonoBehaviour
         }
     }
 
-
     public void OnTriggerEnter2D(Collider2D collision)//Cuando el player colisiona con un objeto
     {
         
             if (collision.gameObject.CompareTag("Checkpoint"))//Si es un checkpoint
             {
-                SistemaVidas.vidas = SistemaVidas.GetVidasIniciales(); //Reinicia el número de vidas al chocar con un checkpoint
+            //No carga las vidas, o creo que es el texto
+                SistemaVidas.SetVidas(numeroInicialVidas);  //Reinicia el número de vidas al chocar con un checkpoint
                 GuardarDatos();
             }
 
@@ -40,10 +41,10 @@ public class ControladorDatos : MonoBehaviour
             if (!PlayerPrefs.HasKey("Progreso")) return; 
             string json = PlayerPrefs.GetString("Progreso"); 
             progreso = JsonUtility.FromJson<ProgresoJuego>(json);
+
             Debug.Log(json);
 
             player.transform.position = progreso.posicion;
-            SistemaVidas.vidas = progreso.vidas;
             LucesManager.zonaActual = progreso.zonaAnterior;//Se cambia a la zona anterior porque, al empezar en un chechpoint, se suma una zona al colisionar con él.
     }
 
@@ -51,13 +52,12 @@ public class ControladorDatos : MonoBehaviour
     {
         
         progreso.posicion = player.transform.position;
-        progreso.vidas = SistemaVidas.vidas;
         progreso.zonaAnterior = LucesManager.zonaAnterior;
 
         string progresoJson = JsonUtility.ToJson(progreso);
-        Debug.Log(progresoJson);
         PlayerPrefs.SetString("Progreso", progresoJson);
 
-        Debug.Log("Guardando posicion " + progresoJson);
+        Debug.Log(progresoJson);
+
     }
 }
