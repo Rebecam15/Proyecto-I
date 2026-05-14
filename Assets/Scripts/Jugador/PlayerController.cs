@@ -156,6 +156,7 @@ public class PlayerController : MonoBehaviour
 
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class PlayerController : MonoBehaviour
 {
@@ -174,11 +175,20 @@ public class PlayerController : MonoBehaviour
     private bool puedeDobleSalto;
     private bool saltoPedido;
 
+    //animaciones ---------------
+    private Animator miAnimador;
+    //---------------------------
+
     private bool bloqueadoEnSuelo;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        //animaciones -------------------------
+        miAnimador = GetComponent<Animator>();
+        //-------------------------------------
+
     }
 
     public void OnMove(InputValue value)
@@ -214,6 +224,13 @@ public class PlayerController : MonoBehaviour
         {
             bloqueadoEnSuelo = false;
         }
+
+        //animaciones -------------------------
+        float movH = UnityEngine.InputSystem.Keyboard.current.dKey.isPressed ? 1 :
+            (UnityEngine.InputSystem.Keyboard.current.aKey.isPressed ? -1 : 0); ;
+
+        miAnimador.SetFloat("Speed", Mathf.Abs(movH));
+        //-------------------------------------
     }
 
     private void FixedUpdate()
