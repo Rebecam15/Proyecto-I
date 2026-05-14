@@ -653,13 +653,14 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: 47, y: 21}
-        - {x: 54, y: 39}
+      - - {x: 37, y: 1}
+        - {x: 54, y: 38}
         - {x: 54, y: 54}
         - {x: -54, y: 54}
-        - {x: -54, y: 34}
-        - {x: -38, y: 0}
-        - {x: 37, y: 0}
+        - {x: -54, y: 37}
+        - {x: -41, y: 7}
+        - {x: -37, y: 0}
+        - {x: 36, y: 0}
       tessellationDetail: 0
       bones: []
       spriteID: cf3b51fa9864fde70800000000000000
@@ -967,7 +968,8 @@ TextureImporter:
       - - {x: 54, y: 54}
         - {x: -54, y: 54}
         - {x: -54, y: 0}
-        - {x: 54, y: 0}
+        - {x: 20, y: -1}
+        - {x: 54, y: -1}
       tessellationDetail: 0
       bones: []
       spriteID: 540c974151e66dd45bb79d921c073a3e
@@ -1182,7 +1184,7 @@ TextureImporter:
       name: PlataformasGrandes2_36
       rect:
         serializedVersion: 2
-        x: 648
+        x: 650
         y: 648
         width: 108
         height: 108
