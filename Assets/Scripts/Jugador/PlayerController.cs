@@ -154,9 +154,11 @@ public class PlayerController : MonoBehaviour
 
 }*/
 
+
+
+
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class PlayerController : MonoBehaviour
 {
@@ -175,6 +177,10 @@ public class PlayerController : MonoBehaviour
     private bool puedeDobleSalto;
     private bool saltoPedido;
 
+
+    private bool mirandoDerecha = true;
+    
+
     //animaciones ---------------
     private Animator miAnimador;
     //---------------------------
@@ -188,7 +194,6 @@ public class PlayerController : MonoBehaviour
         //animaciones -------------------------
         miAnimador = GetComponent<Animator>();
         //-------------------------------------
-
     }
 
     public void OnMove(InputValue value)
@@ -201,7 +206,6 @@ public class PlayerController : MonoBehaviour
         if (value.isPressed)
         {
             saltoPedido = true;
-            
             bloqueadoEnSuelo = false;
         }
     }
@@ -213,8 +217,6 @@ public class PlayerController : MonoBehaviour
         if (enSuelo)
         {
             puedeDobleSalto = true;
-
-            
             if (!saltoPedido)
             {
                 bloqueadoEnSuelo = true;
@@ -225,6 +227,10 @@ public class PlayerController : MonoBehaviour
             bloqueadoEnSuelo = false;
         }
 
+
+        Girar();
+
+
         //animaciones -------------------------
         float movH = UnityEngine.InputSystem.Keyboard.current.dKey.isPressed ? 1 :
             (UnityEngine.InputSystem.Keyboard.current.aKey.isPressed ? -1 : 0); ;
@@ -233,14 +239,25 @@ public class PlayerController : MonoBehaviour
         //-------------------------------------
     }
 
+
+    private void Girar()
+    {
+        if (horizontalInput > 0 && !mirandoDerecha || horizontalInput < 0 && mirandoDerecha)
+        {
+            mirandoDerecha = !mirandoDerecha;
+
+            Vector3 escalaLocal = transform.localScale;
+            escalaLocal.x *= -1;
+            transform.localScale = escalaLocal;
+        }
+    }
+
     private void FixedUpdate()
     {
         float yVel = rb.linearVelocity.y;
 
-      
         if (bloqueadoEnSuelo && !saltoPedido && rb.linearVelocity.y <= 0.1f)
         {
-            
             yVel = -fuerzaPegado;
         }
 
