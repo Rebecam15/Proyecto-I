@@ -5,28 +5,28 @@ using UnityEngine.UIElements;
 
 public class SistemaVidas : MonoBehaviour
 {
-    [SerializeField] public static int numeroInicialVidas = 3;
+    [SerializeField] private static int numeroInicialVidas = 3;
     public static int vidas; //Vidas actuales del jugador
 
 
     public UIDocument uiDocument;
     private Label textoVidas;
 
+
     void Start()
     {
         textoVidas = uiDocument.rootVisualElement.Q<Label>("textoVidas");//.rootvisualElement da acceso al nivel más alto del contenedor de UI Layout. La Q busca el primer label con el nombre textoVidas.
-        vidas = ControladorDatos.vidas;
         Debug.Log("VidasInicio" + vidas);
-
-
-        /* Para cambiarlo por corazones o algo así. Cambiar el laber por una imagen.
-         * var image = new Image();
-           image.image = Resources.Load<Texture2D>("sample-image");*/
     }
 
     public void Update()
     {
         textoVidas.text = "Vidas: " + vidas; //Actualiza el texto de vidas
+    }
+
+    public static int GetVidasIniciales()
+    {
+        return numeroInicialVidas;
     }
 
     public void OnCollisionEnter2D(Collision2D collision) //Cuando colisiona

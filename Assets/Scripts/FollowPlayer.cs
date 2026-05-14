@@ -18,7 +18,6 @@ public class FollowPlayer : MonoBehaviour
     public float smoothTiempo= 0.25f;
 
 
-
     void LateUpdate() //Para suavizar la cámara. Se ejecuta después del movimiento
     {
 
