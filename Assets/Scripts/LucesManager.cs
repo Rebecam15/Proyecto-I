@@ -8,6 +8,7 @@ public class LucesManager : MonoBehaviour
     private int tieneLuces;
     private int necesitaLuces;
 
+
     public void OnTriggerEnter2D(Collider2D collision)//Cuando el ckeckpoint colisione con un objeto de tag player
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -16,8 +17,9 @@ public class LucesManager : MonoBehaviour
             {
                 zonaAnterior = zonaActual;
                 zonaActual = PasarZona(zonaActual);
+                Debug.Log(zonaActual);
             }
-            Debug.Log(zonaActual);
+          
         }
     }
 
