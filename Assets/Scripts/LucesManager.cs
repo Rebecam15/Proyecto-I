@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class LucesManager : MonoBehaviour
 {
@@ -6,8 +7,20 @@ public class LucesManager : MonoBehaviour
     public static Zona zonaActual;
     public static Zona zonaAnterior;
     private int tieneLuces;
-    private int necesitaLuces;
+    private static int necesitaLuces;
 
+
+    public void Start()
+    {
+        RecogerLuz recogerLuces = RecogerLuz.Get();
+
+        if (recogerLuces!=null)
+        {
+            recogerLuces.LuzRecogida += NumeroLuces;
+
+            NumeroLuces(recogerLuces.GetLuces());
+        }
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)//Cuando el ckeckpoint colisione con un objeto de tag player
     {
@@ -20,6 +33,29 @@ public class LucesManager : MonoBehaviour
                 Debug.Log(zonaActual);
             }
           
+        }
+    }
+
+    public void NumeroLuces(int numero)
+    {
+        tieneLuces=numero;
+        ComprobarLuces();
+    }
+
+    public void ComprobarLuces()
+    {
+        if(tieneLuces<necesitaLuces)
+        {
+            Debug.Log("No tienes suficientes luces");
+            Debug.Log(tieneLuces + "/" + necesitaLuces);
+        }
+        else if(tieneLuces>necesitaLuces)
+        {
+            Debug.Log("Error");
+        }
+        else
+        {
+            Debug.Log("Puedes pasar de zona");
         }
     }
 

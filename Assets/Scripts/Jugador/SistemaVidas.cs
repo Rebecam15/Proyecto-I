@@ -12,7 +12,7 @@ using UnityEngine.UIElements;
 
 
     public UIDocument uiDocument;
-    public static Label textoVidas;
+    private static Label textoVidas;
 
     public event Action<int> CambioVidas;
 
