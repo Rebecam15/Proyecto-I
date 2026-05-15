@@ -9,9 +9,13 @@ public class LucesManager : MonoBehaviour
     private int tieneLuces;
     private static int necesitaLuces;
 
+    [SerializeField] private GameObject limite;
+
+
 
     public void Start()
     {
+        limite.SetActive(true);
         RecogerLuz recogerLuces = RecogerLuz.Get();
 
         if (recogerLuces!=null)
@@ -31,6 +35,8 @@ public class LucesManager : MonoBehaviour
                 zonaAnterior = zonaActual;
                 zonaActual = PasarZona(zonaActual);
                 Debug.Log(zonaActual);
+
+                limite.SetActive(true);
             }
           
         }
@@ -42,6 +48,8 @@ public class LucesManager : MonoBehaviour
         ComprobarLuces();
     }
 
+ 
+
     public void ComprobarLuces()
     {
         if(tieneLuces<necesitaLuces)
@@ -49,31 +57,33 @@ public class LucesManager : MonoBehaviour
             Debug.Log("No tienes suficientes luces");
             Debug.Log(tieneLuces + "/" + necesitaLuces);
         }
-        else if(tieneLuces>necesitaLuces)
-        {
-            Debug.Log("Error");
-        }
         else
         {
-            Debug.Log("Puedes pasar de zona");
+            Debug.Log("Puedes pasar de zona"); 
+            limite.SetActive(false);
         }
     }
 
     Zona PasarZona(Zona zona)
     {
         if (zona == Zona.Inicio)
+        {
             zona = Zona.Tutorial;
+            
+        }    
 
         else if (zona == Zona.Tutorial)
         {
             zona = Zona.Pueblo;
             necesitaLuces = 3;
+           
         }
 
         else if (zona == Zona.Pueblo)
         {
-            necesitaLuces = 5;
+            necesitaLuces = 3;
             zona = Zona.Playa;
+                
         }
             
         else if (zona == Zona.Playa)
