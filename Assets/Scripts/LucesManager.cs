@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -10,6 +11,7 @@ public class LucesManager : MonoBehaviour
     private static int necesitaLuces;
 
     [SerializeField] private GameObject limite;
+    //[SerializeField] private GameObject ultimoCP;
 
 
 
@@ -35,6 +37,8 @@ public class LucesManager : MonoBehaviour
                 zonaAnterior = zonaActual;
                 zonaActual = PasarZona(zonaActual);
                 Debug.Log(zonaActual);
+
+               //Poner algo como que el gameObject que se ha chocado es el ultimoCP o algo así
 
                 limite.SetActive(true);
             }
@@ -69,7 +73,7 @@ public class LucesManager : MonoBehaviour
         if (zona == Zona.Inicio)
         {
             zona = Zona.Tutorial;
-            
+            necesitaLuces = 1;
         }    
 
         else if (zona == Zona.Tutorial)
