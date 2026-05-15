@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8208397075167227769}
   - component: {fileID: 6429535150763062382}
-  - component: {fileID: 3312616804828081359}
   - component: {fileID: 5986507129359444812}
   - component: {fileID: -2738479722379940332}
   m_Layer: 0
@@ -80,8 +79,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 10158929
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1433718407175486464, guid: 9aefa8f6ca56b9e4caac62ffe3562924, type: 3}
@@ -94,19 +93,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &3312616804828081359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3945696530146681452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dab536991aade9e47b65855022fb6a4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RecogerLuz
-  _recogido: 0
 --- !u!61 &5986507129359444812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -137,7 +123,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

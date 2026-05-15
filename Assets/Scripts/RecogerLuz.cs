@@ -1,25 +1,28 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using System;
 using UnityEngine.Rendering;
 
-public class RecogerLuz : MonoBehaviour, IInteractable
+public class RecogerLuz : Singleton<RecogerLuz>
 {
-    [SerializeField] private bool _recogido = false;
-    public static int luces=0;
+    private static int luces=0;
 
-    public bool PuedeInteractuar(GameObject objetoInteractuar)
+    public event Action <int> LuzRecogida;
+
+    public int GetLuces()
     {
-        Debug.Log("Puede interactuar");
-        return !_recogido;
-
+        return luces;
     }
 
-    public void Interactuar(GameObject objetoInteractuar)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-            luces++;  
-            _recogido = true;
-            Debug.Log($"Luces es igual a {luces}");
-            gameObject.SetActive(false);
-    }
 
+        if (other.gameObject.CompareTag("Luz"))
+        {
+            luces++;
+            LuzRecogida?.Invoke(luces);
+            other.gameObject.SetActive(false);
+ 
+        }
+    }
 }

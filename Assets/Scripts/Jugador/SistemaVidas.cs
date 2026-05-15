@@ -12,7 +12,7 @@ using UnityEngine.UIElements;
 
 
     public UIDocument uiDocument;
-    public static Label textoVidas;
+    private static Label textoVidas;
 
     public event Action<int> CambioVidas;
 
@@ -20,13 +20,15 @@ using UnityEngine.UIElements;
     void Start()
     {
         textoVidas = uiDocument.rootVisualElement.Q<Label>("textoVidas");//.rootvisualElement da acceso al nivel más alto del contenedor de UI Layout. La Q busca el primer label con el nombre textoVidas.
-        textoVidas.text = "Vidas: " + vidas;
+                                                                         //textoVidas.text = "Vidas: " + vidas;
+        Debug.Log(vidas);
     }
 
     public static void SetVidas(int _vidas)
     {
         vidas = _vidas;
-        textoVidas.text = "Vidas: " + vidas;
+        //textoVidas.text = "Vidas: " + vidas;
+        Debug.Log(vidas);
     }
 
     public static int GetVidas()
@@ -40,7 +42,8 @@ using UnityEngine.UIElements;
         if (collision.gameObject.CompareTag("Enemigo") && vidas>0) //Si está vivo y choca contra un enemigo
         {
             vidas--;
-            textoVidas.text = "Vidas: " + vidas; //Actualiza el texto de vidas
+            // textoVidas.text = "Vidas: " + vidas; //Actualiza el texto de vidas
+            Debug.Log(vidas);
             CambioVidas?.Invoke(vidas);
 
 

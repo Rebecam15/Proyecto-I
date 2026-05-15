@@ -164,7 +164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c9d97d941aa8945a02e97df0c64c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LucesManager
-  CPTutorial: {fileID: 0}
-  CPPueblo: {fileID: 0}
-  CPPlaya: {fileID: 0}
-  CPFaro: {fileID: 0}
+  limite1: {fileID: 1586011401682994794, guid: a55e9d9e58f3a694b854c25206045588, type: 3}
+  limite2: {fileID: 0}
+  limite3: {fileID: 0}
