@@ -11,6 +11,7 @@ public class LucesManager : MonoBehaviour
     private static int necesitaLuces;
 
     [SerializeField] private GameObject limite;
+    [SerializeField] private GameObject limiteAnterior;
     //[SerializeField] private GameObject ultimoCP;
 
 
@@ -40,7 +41,9 @@ public class LucesManager : MonoBehaviour
 
                //Poner algo como que el gameObject que se ha chocado es el ultimoCP o algo así
 
-                limite.SetActive(true);
+                limiteAnterior.SetActive(true);
+                Debug.Log(limite);
+                Debug.Log(limiteAnterior);
             }
           
         }
@@ -63,7 +66,8 @@ public class LucesManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Puedes pasar de zona"); 
+            Debug.Log("Puedes pasar de zona");
+            
             limite.SetActive(false);
         }
     }
