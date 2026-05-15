@@ -9,6 +9,7 @@ TagManager:
   - Checkpoint
   - Luz
   - Agua
+  - Limite
   layers:
   - Default
   - TransparentFX
