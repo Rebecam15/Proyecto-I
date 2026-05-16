@@ -23,8 +23,6 @@ public class RecogerLuz : Singleton<RecogerLuz>
             luces++;
             other.gameObject.SetActive(false);
             LuzRecogida?.Invoke(luces);
-          
- 
         }
     }
 }

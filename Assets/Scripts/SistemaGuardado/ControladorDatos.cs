@@ -45,16 +45,18 @@ public class ControladorDatos : MonoBehaviour
             Debug.Log(json);
 
             player.transform.position = progreso.posicion;
-            PlayerRespawn.posAnterior = progreso.posAnterior;
-            LucesManager.zonaActual = progreso.zonaAnterior;//Se cambia a la zona anterior porque, al empezar en un chechpoint, se suma una zona al colisionar con él.
+            //CheckPointManager.cuentaCP=progreso.cuentaCP;
+            CheckPointManager.ultimoCP = progreso.ultimoCP;
+        //LucesManager.zonaActual = progreso.zonaAnterior;//Se cambia a la zona anterior porque, al empezar en un chechpoint, se suma una zona al colisionar con él.
     }
 
     private void GuardarDatos() //Guarda la posición del jugador en un archivo
     {
         
         progreso.posicion = player.transform.position;
-        progreso.zonaAnterior = LucesManager.zonaAnterior;
-        progreso.posAnterior = PlayerRespawn.posAnterior;
+        //progreso.zonaAnterior = LucesManager.zonaAnterior;
+        // progreso.cuentaCP = CheckPointManager.cuentaCP;
+        progreso.ultimoCP = CheckPointManager.ultimoCP;
 
         string progresoJson = JsonUtility.ToJson(progreso);
         PlayerPrefs.SetString("Progreso", progresoJson);

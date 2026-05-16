@@ -5,33 +5,33 @@ public class CheckPointManager : MonoBehaviour
 
     [SerializeField] private GameObject[] checkPoints;
 
-    public enum Zona { Inicio, Tutorial, Pueblo, Playa, Faro };
-    public static Zona zonaActual;
-    public static Zona zonaAnterior;
-
-    private GameObject ultimoCP;
+    private int cantidadArray = 5;
+   
+    public static GameObject ultimoCP;
+    public static int cuentaCP=0;
 
     public void Start()
     {
-        checkPoints = new GameObject[5];
-        ultimoCP = checkPoints[1];
+        checkPoints = new GameObject[cantidadArray];
     }
+   /* public void QueCP()
+    {
+        ultimoCP= checkPoints[cuentaCP];
+    }*/
     public void OnTriggerEnter2D(Collider2D collision)//Cuando el ckeckpoint colisione con un objeto de tag player
     {
         if (collision.gameObject.CompareTag("Checkpoint"))
         {
-            Debug.Log(collision.gameObject);
+            Debug.Log("Zona "+ultimoCP);
+            //QueCP();
 
-          if(ultimoCP== collision.gameObject)
-            {
-                Debug.Log("Es el mismpCP");
-            }
-          else
-            {
-                Debug.Log("Es un nuevo CP");
+          if(ultimoCP != collision.gameObject)
+            { 
+                cuentaCP++;
+                ultimoCP = collision.gameObject;
             }
 
-            ultimoCP = collision.gameObject;
+         
         }
     }
 }

@@ -3,17 +3,16 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 /*
- Se crea una enumeración Zona que controlará la zona en la que esté el jugador
  Recibe la cuenta de luces recogidas por el jugador
  */
 public class LucesManager : MonoBehaviour
 {
-    public enum Zona { Inicio, Tutorial, Pueblo, Playa, Faro };
-    public static Zona zonaActual;
-    public static Zona zonaAnterior;
-
     private int tieneLuces;
     private static int necesitaLuces;
+
+    private int lucesTutorial = 1;
+    private int lucesNormal = 3;
+    private int noLuces = 0;
 
     [SerializeField] private GameObject limite;
     [SerializeField] private GameObject limiteAnterior;
@@ -22,7 +21,6 @@ public class LucesManager : MonoBehaviour
 
     public void Start()
     {
-        Debug.Log(zonaActual);
         RecogerLuz recogerLuces = RecogerLuz.Get();//Se crea una variable de tipo RecoegerLuz
 
         if (recogerLuces != null)
@@ -37,26 +35,18 @@ public class LucesManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-             if (PlayerRespawn.mismoCP == false)//Si es un nuevo CheckPoint
-             {
-                 zonaAnterior = zonaActual;
-                 zonaActual = PasarZona(zonaActual);
-                 
-                 Debug.Log(zonaActual);
-                 Debug.Log("NecesitaLuces "+ necesitaLuces);
-
+                CuantasLucesNecesita();
+                Debug.Log("NecesitaLuces " + necesitaLuces);
                 limite.SetActive(true);
                 limiteAnterior.SetActive(true);
-             }
-           
-
         }
     }
 
     public void NumeroLuces(int numero)
     {
+        Debug.Log("Luz recogida");
         tieneLuces = numero;
-        Debug.Log("Luces"+ tieneLuces +"/ "+ necesitaLuces );
+        Debug.Log("Luces"+ tieneLuces +"/ "+ necesitaLuces);
         ComprobarLuces();
     }
 
@@ -77,39 +67,24 @@ public class LucesManager : MonoBehaviour
         }
     }
 
-    Zona PasarZona(Zona zona)
+    public void CuantasLucesNecesita()
     {
-        if (zona == Zona.Inicio)
+        Debug.Log("Has entrado en cuantas luces necesita");
+        if (CheckPointManager.cuentaCP == 0)
         {
-            zona = Zona.Tutorial;
-            necesitaLuces = 1;
+            necesitaLuces = noLuces;
         }
-
-        else if (zona == Zona.Tutorial)
+        else if (CheckPointManager.cuentaCP == 1)
         {
-            zona = Zona.Pueblo;
-            necesitaLuces = 3;
-
+            necesitaLuces = lucesTutorial;
         }
-
-        else if (zona == Zona.Pueblo)
+        else
         {
-            necesitaLuces = 3;
-            zona = Zona.Playa;
-
+            necesitaLuces = lucesNormal;
         }
-
-        else if (zona == Zona.Playa)
-        {
-            necesitaLuces = 4;
-            zona = Zona.Faro;
-        }
-
-        else if (zona == Zona.Faro)
-            zona = Zona.Tutorial;
-
-        return zona;
     }
+
+  
 
 }
 
