@@ -22,7 +22,7 @@ public class LucesManager : MonoBehaviour
 
     public void Start()
     {
-       
+        Debug.Log(zonaActual);
         RecogerLuz recogerLuces = RecogerLuz.Get();//Se crea una variable de tipo RecoegerLuz
 
         if (recogerLuces != null)
