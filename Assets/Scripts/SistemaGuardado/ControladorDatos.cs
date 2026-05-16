@@ -6,6 +6,7 @@ public class ControladorDatos : MonoBehaviour
 {
     public GameObject player;
     [SerializeField] private int numeroInicialVidas = 3;
+    LucesManager lucesManager;
 
     public ProgresoJuego progreso;
 
@@ -45,6 +46,7 @@ public class ControladorDatos : MonoBehaviour
             Debug.Log(json);
 
             player.transform.position = progreso.posicion;
+            PlayerRespawn.posAnterior = progreso.posAnterior;
             LucesManager.zonaActual = progreso.zonaAnterior;//Se cambia a la zona anterior porque, al empezar en un chechpoint, se suma una zona al colisionar con él.
     }
 
@@ -52,7 +54,8 @@ public class ControladorDatos : MonoBehaviour
     {
         
         progreso.posicion = player.transform.position;
-        progreso.zonaAnterior = LucesManager.zonaAnterior;
+        progreso.zonaAnterior = lucesManager.zonaAnterior;
+        progreso.posAnterior = PlayerRespawn.posAnterior;
 
         string progresoJson = JsonUtility.ToJson(progreso);
         PlayerPrefs.SetString("Progreso", progresoJson);

@@ -4,8 +4,15 @@ using UnityEngine;
 public class PlayerRespawn : MonoBehaviour
 {
     private float checkPointPositionX, checkPointPositionY;
-    private Vector2 posAnterior;
+    public static Vector2 posAnterior;
     public static bool mismoCP=false;
+
+    
+
+    /*public void Start()
+    {
+        CheckPointAlcanzado(posAnterior.x, posAnterior.y);
+    }*/
     public void Respawn() //mueve al jugador a la posición del último checkpoint.
     {
         transform.position = new Vector2(PlayerPrefs.GetFloat("checkPointPositionX"), PlayerPrefs.GetFloat("checkPointPositionY"));
@@ -23,6 +30,7 @@ public class PlayerRespawn : MonoBehaviour
             PlayerPrefs.SetFloat("checkPointPositionX", x);
             PlayerPrefs.SetFloat("checkPointPositionY", y);
             mismoCP = false;
+            RecogerLuz.luces = 0;
             posAnterior = new Vector2(x, y);//Guarda la posición en la variable posAnterior para despúés comparar
         }
         

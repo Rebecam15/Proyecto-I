@@ -6,7 +6,7 @@ using UnityEngine.Rendering;
 
 public class RecogerLuz : Singleton<RecogerLuz>
 {
-    private static int luces=0;
+    public static int luces=0;
 
     public event Action <int> LuzRecogida;
 
@@ -21,8 +21,9 @@ public class RecogerLuz : Singleton<RecogerLuz>
         if (other.gameObject.CompareTag("Luz"))
         {
             luces++;
-            LuzRecogida?.Invoke(luces);
             other.gameObject.SetActive(false);
+            LuzRecogida?.Invoke(luces);
+          
  
         }
     }
