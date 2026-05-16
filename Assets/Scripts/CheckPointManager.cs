@@ -1,14 +1,12 @@
+using System;
 using UnityEngine;
 
 public class CheckPointManager : MonoBehaviour
 {
 
-    [SerializeField] private GameObject[] checkPoints;
-
+    [SerializeField] private static GameObject[] checkPoints;
     private int cantidadArray = 5;
-   
     public static GameObject ultimoCP;
-    public static int cuentaCP=0;
 
     public void Start()
     {
@@ -22,16 +20,19 @@ public class CheckPointManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Checkpoint"))
         {
-            Debug.Log("Zona "+ultimoCP);
-            //QueCP();
+           Debug.Log("Zona "+ultimoCP);
 
           if(ultimoCP != collision.gameObject)
             { 
-                cuentaCP++;
                 ultimoCP = collision.gameObject;
             }
-
-         
         }
+    }
+
+    public int GetIndice() //Siempre debuelve -1. Hay que mirarlo
+    {
+        int indice = Array.IndexOf(checkPoints, ultimoCP);
+        Debug.Log("Zona "+ indice);
+        return indice;
     }
 }

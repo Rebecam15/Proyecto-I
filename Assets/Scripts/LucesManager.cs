@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -12,15 +13,16 @@ public class LucesManager : MonoBehaviour
 
     private int lucesTutorial = 1;
     private int lucesNormal = 3;
-    private int noLuces = 0;
 
     [SerializeField] private GameObject limite;
     [SerializeField] private GameObject limiteAnterior;
 
-
+    private CheckPointManager checkPointManager;
 
     public void Start()
     {
+        checkPointManager = FindFirstObjectByType<CheckPointManager>();
+
         RecogerLuz recogerLuces = RecogerLuz.Get();//Se crea una variable de tipo RecoegerLuz
 
         if (recogerLuces != null)
@@ -30,7 +32,6 @@ public class LucesManager : MonoBehaviour
             NumeroLuces(recogerLuces.GetLuces());
         }
     }
-
     public void OnTriggerEnter2D(Collider2D collision)//Cuando el ckeckpoint colisione con un objeto de tag player
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -69,12 +70,11 @@ public class LucesManager : MonoBehaviour
 
     public void CuantasLucesNecesita()
     {
-        Debug.Log("Has entrado en cuantas luces necesita");
-        if (CheckPointManager.cuentaCP == 0)
-        {
-            necesitaLuces = noLuces;
-        }
-        else if (CheckPointManager.cuentaCP == 1)
+        int indice = checkPointManager.GetIndice();
+
+        Debug.Log("Has entrado en cuantas luces necesita "+ indice);
+
+        if (indice == 0)
         {
             necesitaLuces = lucesTutorial;
         }
