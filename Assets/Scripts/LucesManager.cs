@@ -10,7 +10,7 @@ public class LucesManager : MonoBehaviour
 {
     public enum Zona { Inicio, Tutorial, Pueblo, Playa, Faro };
     public static Zona zonaActual;
-    public Zona zonaAnterior;
+    public static Zona zonaAnterior;
 
     private int tieneLuces;
     private static int necesitaLuces;

@@ -6,7 +6,6 @@ public class ControladorDatos : MonoBehaviour
 {
     public GameObject player;
     [SerializeField] private int numeroInicialVidas = 3;
-    LucesManager lucesManager;
 
     public ProgresoJuego progreso;
 
@@ -54,7 +53,7 @@ public class ControladorDatos : MonoBehaviour
     {
         
         progreso.posicion = player.transform.position;
-        progreso.zonaAnterior = lucesManager.zonaAnterior;
+        progreso.zonaAnterior = LucesManager.zonaAnterior;
         progreso.posAnterior = PlayerRespawn.posAnterior;
 
         string progresoJson = JsonUtility.ToJson(progreso);
