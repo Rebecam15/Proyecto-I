@@ -68,11 +68,11 @@ TagManager:
   - name: water
     uniqueID: 1641523591
     locked: 0
-  - name: foreground
-    uniqueID: 966792481
-    locked: 0
   - name: stars
     uniqueID: 3499474389
+    locked: 0
+  - name: foreground
+    uniqueID: 966792481
     locked: 0
   m_RenderingLayers:
   - Default
