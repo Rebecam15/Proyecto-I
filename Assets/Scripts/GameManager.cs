@@ -5,9 +5,7 @@ using UnityEngine;
   public class GameManager : Singleton<GameManager>
 {
 
-    private int _lucesRecogidas;
-
- 
+    /*private int _lucesRecogidas;
 
     public int GetLucesRecogidas()
     {
@@ -21,7 +19,7 @@ using UnityEngine;
     {
         _lucesRecogidas = luces;
         CambioLuces?.Invoke(_lucesRecogidas);
-    }
+    }*/
 
 
 
