@@ -7,12 +7,9 @@ public class PlayerRespawn : MonoBehaviour
     public static Vector2 posAnterior;
     public static bool mismoCP=false;
 
-    
+    private RecogerLuz luces;
+    private int lucesCP = 0;
 
-    /*public void Start()
-    {
-        CheckPointAlcanzado(posAnterior.x, posAnterior.y);
-    }*/
     public void Respawn() //mueve al jugador a la posición del último checkpoint.
     {
         transform.position = new Vector2(PlayerPrefs.GetFloat("checkPointPositionX"), PlayerPrefs.GetFloat("checkPointPositionY"));
@@ -30,7 +27,7 @@ public class PlayerRespawn : MonoBehaviour
             PlayerPrefs.SetFloat("checkPointPositionX", x);
             PlayerPrefs.SetFloat("checkPointPositionY", y);
             mismoCP = false;
-            RecogerLuz.luces = 0;
+            luces.SetLuces(lucesCP);
             posAnterior = new Vector2(x, y);//Guarda la posición en la variable posAnterior para despúés comparar
         }
         

@@ -1,37 +1,55 @@
+using System;
 using UnityEngine;
 
-public class CheckPointManager : MonoBehaviour
+public class CheckPointManager : Singleton<CheckPointManager>
 {
 
-    [SerializeField] private GameObject[] checkPoints;
+    [SerializeField] private  GameObject[] checkPoints;
+    public static int cuentaCP=0;
 
-    public enum Zona { Inicio, Tutorial, Pueblo, Playa, Faro };
-    public static Zona zonaActual;
-    public static Zona zonaAnterior;
+    private int lucesChoque = 0;
 
-    private GameObject ultimoCP;
+    public static GameObject ultimoCP;
+    public static GameObject primerCP;
+
+    public event Action<int> NuevoIndice;
 
     public void Start()
     {
-        checkPoints = new GameObject[5];
-        ultimoCP = checkPoints[1];
+       // ultimoCP = checkPoints[cuentaCP];
     }
     public void OnTriggerEnter2D(Collider2D collision)//Cuando el ckeckpoint colisione con un objeto de tag player
     {
         if (collision.gameObject.CompareTag("Checkpoint"))
         {
-            Debug.Log(collision.gameObject);
+           Debug.Log("Zona "+ultimoCP);
 
-          if(ultimoCP== collision.gameObject)
+          if(ultimoCP != collision.gameObject)
             {
-                Debug.Log("Es el mismpCP");
-            }
-          else
-            {
-                Debug.Log("Es un nuevo CP");
-            }
+                RecogerLuz luces = RecogerLuz.Get();
 
-            ultimoCP = collision.gameObject;
+                ultimoCP = collision.gameObject;
+
+                cuentaCP = GetIndice();
+                Debug.Log("Indice"+cuentaCP);
+                NuevoIndice?.Invoke(cuentaCP);
+
+                luces.SetLuces(lucesChoque);
+            }
         }
     }
+
+    public int GetIndice() //Siempre devuelve -1. Hay que mirarlo
+    {
+       int indice = Array.IndexOf(checkPoints, ultimoCP);
+       Debug.Log("Zona "+ indice);
+
+       
+        return indice;
+    }
+    public int GetCuenta()
+    {
+        return cuentaCP;    
+    }
+
 }
