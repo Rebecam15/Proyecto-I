@@ -68,6 +68,9 @@ TagManager:
   - name: water
     uniqueID: 1641523591
     locked: 0
+  - name: waterKill
+    uniqueID: 2579713503
+    locked: 0
   - name: stars
     uniqueID: 3499474389
     locked: 0
