@@ -16,6 +16,7 @@ MonoBehaviour:
   dialogueLines:
   - Holiii
   - Adios
-  automaticLines: 0001
+  - JAjaja
+  automaticLines: 
   typeSpeed: 0.05
   progressDelay: 1.5
