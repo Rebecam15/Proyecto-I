@@ -6,13 +6,19 @@ using UnityEngine.Rendering;
 
 public class RecogerLuz : Singleton<RecogerLuz>
 {
-    public static int luces=0;
+    private static int luces=0;
 
     public event Action <int> LuzRecogida;
 
     public int GetLuces()
     {
         return luces;
+    }
+
+    public void SetLuces(int cantLuces)
+    {
+        luces = cantLuces;
+     
     }
 
     public void OnTriggerEnter2D(Collider2D other)

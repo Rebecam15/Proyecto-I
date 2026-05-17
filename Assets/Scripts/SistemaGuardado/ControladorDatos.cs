@@ -16,7 +16,6 @@ public class ControladorDatos : MonoBehaviour
     private void Awake() //Al empezar
     {
         progreso = new ProgresoJuego();
-  
 
         if (cargar == true)
         {
@@ -38,7 +37,9 @@ public class ControladorDatos : MonoBehaviour
 
     private void CargarDatos() //Carga la última posición guardada  
     {
-            if (!PlayerPrefs.HasKey("Progreso")) return; 
+            RecogerLuz luces = RecogerLuz.Get();
+
+        if (!PlayerPrefs.HasKey("Progreso")) return; 
             string json = PlayerPrefs.GetString("Progreso"); 
             progreso = JsonUtility.FromJson<ProgresoJuego>(json);
 
@@ -46,13 +47,18 @@ public class ControladorDatos : MonoBehaviour
 
             player.transform.position = progreso.posicion;
             CheckPointManager.ultimoCP = progreso.ultimoCP;
+            luces.SetLuces(progreso.lucesRecogidas);
+
     }
 
     private void GuardarDatos() //Guarda la posición del jugador en un archivo
-    {
-        
-        progreso.posicion = player.transform.position;
+{
+        RecogerLuz luces = RecogerLuz.Get();
+
+        progreso.posicion = player.transform.position;//Quizas quitar
         progreso.ultimoCP = CheckPointManager.ultimoCP;
+        progreso.lucesRecogidas = luces.GetLuces();
+     
 
         string progresoJson = JsonUtility.ToJson(progreso);
         PlayerPrefs.SetString("Progreso", progresoJson);

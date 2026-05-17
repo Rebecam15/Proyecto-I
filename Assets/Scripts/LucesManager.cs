@@ -11,6 +11,7 @@ public class LucesManager : MonoBehaviour
     private int tieneLuces;
     private static int necesitaLuces;
 
+
     private int lucesTutorial = 1;
     private int lucesNormal = 3;
 
@@ -24,6 +25,7 @@ public class LucesManager : MonoBehaviour
         checkPointManager = FindFirstObjectByType<CheckPointManager>();
 
         RecogerLuz recogerLuces = RecogerLuz.Get();//Se crea una variable de tipo RecoegerLuz
+        CheckPointManager cpManager= CheckPointManager.Get();   
 
         if (recogerLuces != null)
         {
@@ -31,12 +33,16 @@ public class LucesManager : MonoBehaviour
 
             NumeroLuces(recogerLuces.GetLuces());
         }
+        if(cpManager != null)
+        {
+            cpManager.NuevoIndice += CuantasLucesNecesita;
+            CuantasLucesNecesita(cpManager.GetCuenta());
+        }
     }
     public void OnTriggerEnter2D(Collider2D collision)//Cuando el ckeckpoint colisione con un objeto de tag player
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-                CuantasLucesNecesita();
                 Debug.Log("NecesitaLuces " + necesitaLuces);
                 limite.SetActive(true);
                 limiteAnterior.SetActive(true);
@@ -68,13 +74,12 @@ public class LucesManager : MonoBehaviour
         }
     }
 
-    public void CuantasLucesNecesita()
+    public void CuantasLucesNecesita(int cuenta)
     {
-        int indice = checkPointManager.GetIndice();
 
-        Debug.Log("Has entrado en cuantas luces necesita "+ indice);
+        Debug.Log("Has entrado en cuantas luces necesita "+ cuenta);
 
-        if (indice == 0)
+        if(cuenta==0)
         {
             necesitaLuces = lucesTutorial;
         }
