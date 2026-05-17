@@ -6,9 +6,9 @@ using System.Collections.Generic;
 public class TransicionesPantalla : MonoBehaviour
 {
     [SerializeField] private CanvasGroup canvasGroup;
-    private float duracionFade = 3f;
+    private float duracionFade = 5f;
 
-    private bool fadeIn = false;
+    public bool fadeIn = false;
 
     void Start()
     {

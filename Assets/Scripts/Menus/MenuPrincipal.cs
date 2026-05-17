@@ -14,6 +14,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Opciones()
     {
+        Debug.Log("Opciones");
         mainMenu.SetActive(settingsMenu.activeSelf);
         settingsMenu.SetActive(!settingsMenu.activeSelf);
 

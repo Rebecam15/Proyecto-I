@@ -1,13 +1,20 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField]
     private float areaInteraccion = 1.0f;
 
+
     void Update()
     {
-        StartInteraction();
+        //He metido esto para que no interactuase cada frame  -Claudia
+        if (Keyboard.current[Key.E].wasPressedThisFrame)
+        {
+            StartInteraction();
+        }
+
     }
 
     public void StartInteraction()
@@ -35,5 +42,7 @@ public class PlayerInteraction : MonoBehaviour
     }
 
 
-        
-    }
+
+
+
+}

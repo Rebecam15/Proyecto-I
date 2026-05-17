@@ -33,11 +33,12 @@ public class NPCharacter : MonoBehaviour, IInteractable
         }
 
 
-        if (dialogueActive)
+        if (dialogueActive==true)
         {
             Debug.Log("activo");
             NextLine();
         }
+
         else
         {
             Debug.Log("start");
@@ -69,6 +70,7 @@ public class NPCharacter : MonoBehaviour, IInteractable
         }
         else if (indexDialogue + 1 < dialogueData.dialogueLines.Length)
         {
+            indexDialogue += 1;
             StartCoroutine(TypeText());
         }
         else
