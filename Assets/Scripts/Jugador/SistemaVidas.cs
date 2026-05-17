@@ -21,14 +21,14 @@ using UnityEngine.UIElements;
     {
         textoVidas = uiDocument.rootVisualElement.Q<Label>("textoVidas");//.rootvisualElement da acceso al nivel más alto del contenedor de UI Layout. La Q busca el primer label con el nombre textoVidas.
                                                                          //textoVidas.text = "Vidas: " + vidas;
-        Debug.Log(vidas);
+        Debug.Log("Vidas "+vidas);
     }
 
     public static void SetVidas(int _vidas)
     {
         vidas = _vidas;
         //textoVidas.text = "Vidas: " + vidas;
-        Debug.Log(vidas);
+        //Debug.Log(vidas);
     }
 
     public static int GetVidas()

@@ -1,29 +1,31 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
 /*
- Se crea una enumeración Zona que controlará la zona en la que esté el jugador
  Recibe la cuenta de luces recogidas por el jugador
  */
 public class LucesManager : MonoBehaviour
 {
-    public enum Zona { Inicio, Tutorial, Pueblo, Playa, Faro };
-    public static Zona zonaActual;
-    public static Zona zonaAnterior;
-
     private int tieneLuces;
     private static int necesitaLuces;
+
+
+    private int lucesTutorial = 1;
+    private int lucesNormal = 3;
 
     [SerializeField] private GameObject limite;
     [SerializeField] private GameObject limiteAnterior;
 
-
+    private CheckPointManager checkPointManager;
 
     public void Start()
     {
-        Debug.Log(zonaActual);
+        checkPointManager = FindFirstObjectByType<CheckPointManager>();
+
         RecogerLuz recogerLuces = RecogerLuz.Get();//Se crea una variable de tipo RecoegerLuz
+        CheckPointManager cpManager= CheckPointManager.Get();   
 
         if (recogerLuces != null)
         {
@@ -31,32 +33,27 @@ public class LucesManager : MonoBehaviour
 
             NumeroLuces(recogerLuces.GetLuces());
         }
+        if(cpManager != null)
+        {
+            cpManager.NuevoIndice += CuantasLucesNecesita;
+            CuantasLucesNecesita(cpManager.GetCuenta());
+        }
     }
-
     public void OnTriggerEnter2D(Collider2D collision)//Cuando el ckeckpoint colisione con un objeto de tag player
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-             if (PlayerRespawn.mismoCP == false)//Si es un nuevo CheckPoint
-             {
-                 zonaAnterior = zonaActual;
-                 zonaActual = PasarZona(zonaActual);
-                 
-                 Debug.Log(zonaActual);
-                 Debug.Log("NecesitaLuces "+ necesitaLuces);
-
+                Debug.Log("NecesitaLuces " + necesitaLuces);
                 limite.SetActive(true);
                 limiteAnterior.SetActive(true);
-             }
-           
-
         }
     }
 
     public void NumeroLuces(int numero)
     {
+        Debug.Log("Luz recogida");
         tieneLuces = numero;
-        Debug.Log("Luces"+ tieneLuces +"/ "+ necesitaLuces );
+        Debug.Log("Luces"+ tieneLuces +"/ "+ necesitaLuces);
         ComprobarLuces();
     }
 
@@ -77,39 +74,22 @@ public class LucesManager : MonoBehaviour
         }
     }
 
-    Zona PasarZona(Zona zona)
+    public void CuantasLucesNecesita(int cuenta)
     {
-        if (zona == Zona.Inicio)
+
+        Debug.Log("Has entrado en cuantas luces necesita "+ cuenta);
+
+        if(cuenta==0)
         {
-            zona = Zona.Tutorial;
-            necesitaLuces = 1;
+            necesitaLuces = lucesTutorial;
         }
-
-        else if (zona == Zona.Tutorial)
+        else
         {
-            zona = Zona.Pueblo;
-            necesitaLuces = 3;
-
+            necesitaLuces = lucesNormal;
         }
-
-        else if (zona == Zona.Pueblo)
-        {
-            necesitaLuces = 3;
-            zona = Zona.Playa;
-
-        }
-
-        else if (zona == Zona.Playa)
-        {
-            necesitaLuces = 4;
-            zona = Zona.Faro;
-        }
-
-        else if (zona == Zona.Faro)
-            zona = Zona.Tutorial;
-
-        return zona;
     }
+
+  
 
 }
 

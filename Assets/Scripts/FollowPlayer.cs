@@ -13,15 +13,17 @@ public class FollowPlayer : MonoBehaviour
 
     private float yVelocity = 0.0f;
     private float xVelocity=0.0f;
-    private float bajarAcantilados;
 
-    public float smoothTiempo= 0.25f;
+    private float smoothTiempo= 0.25f;
+
+    private int zona = 3;
+    [SerializeField] GameObject checkPoint2;
 
 
     void LateUpdate() //Para suavizar la cámara. Se ejecuta después del movimiento
     {
 
-        if (LucesManager.zonaActual != LucesManager.Zona.Playa)
+        if (CheckPointManager.ultimoCP != checkPoint2)
         {
             moverCamaraY = subirCamara;
         }
