@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Guarda datos ddel juego
+
 [System.Serializable]
 public struct ProgresoJuego 
 {

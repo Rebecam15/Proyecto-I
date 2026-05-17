@@ -4,6 +4,12 @@ using UnityEngine;
 using System;
 using UnityEngine.Rendering;
 
+/*
+ * Lleva la cuenta de las luces que ha recogido el jugador.
+ * Mediante un evento, informa de la nueva cantidad de luces a otros scripts.
+ * Esta cantidad pede ser modificada desde otros scripts.
+ * Desactiva las luces cuando el jugador choca con ellas.
+ */
 public class RecogerLuz : Singleton<RecogerLuz>
 {
     private static int luces=0;

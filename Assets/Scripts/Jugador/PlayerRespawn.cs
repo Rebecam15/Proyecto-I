@@ -1,11 +1,15 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
+/*
+ * Respawnea al jugador cuando muere al último checkpoint por el que ha pasado.
+ * Guarda la posición de los checkpoints cuando el jugador pasa por ellos.
+    */
 public class PlayerRespawn : MonoBehaviour
 {
     private float checkPointPositionX, checkPointPositionY;
-    public static Vector2 posAnterior;
-    public static bool mismoCP=false;
+    //private Vector2 posAnterior;
+    //public static bool mismoCP=false;
 
     private RecogerLuz luces;
 

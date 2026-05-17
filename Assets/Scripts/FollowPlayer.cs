@@ -3,6 +3,11 @@ using UnityEngine;
 using UnityEngine.Splines;
 using UnityEngine.UIElements;
 
+/*
+ Hace que la cámara siga al jugador.
+
+ Cuando el jugador llega a la zona de los acantilados, la cámara baja, para que el jugador pueda ver mejor lo que hay debajo de él.
+ */
 public class FollowPlayer : MonoBehaviour
 {
     public Transform _player;
@@ -18,12 +23,18 @@ public class FollowPlayer : MonoBehaviour
 
     private int zona = 3;
     [SerializeField] GameObject checkPoint2;
+    private GameObject comparacionCP;
 
-
+  
     void LateUpdate() //Para suavizar la cámara. Se ejecuta después del movimiento
     {
+        CheckPointManager ultimoCP = CheckPointManager.Get();//Debería quitar esto del update
+        if (ultimoCP.GetUltimoCP() != null)
+        {
+            comparacionCP = ultimoCP.GetUltimoCP();
+        }
 
-        if (CheckPointManager.ultimoCP != checkPoint2)
+        if (comparacionCP != checkPoint2)
         {
             moverCamaraY = subirCamara;
         }
