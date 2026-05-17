@@ -39,12 +39,11 @@ public class CheckPointManager : Singleton<CheckPointManager>
         }
     }
 
-    public int GetIndice() //Siempre devuelve -1. Hay que mirarlo
+    public int GetIndice() 
     {
        int indice = Array.IndexOf(checkPoints, ultimoCP);
-       Debug.Log("Zona "+ indice);
-
-       
+        Debug.Log("Zona " + indice);
+        
         return indice;
     }
     public int GetCuenta()

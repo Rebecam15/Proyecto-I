@@ -9,7 +9,7 @@ public class FollowPlayer : MonoBehaviour
 
     private int moverCamaraY;
     private int subirCamara = 2;
-    private int bajarCamara = -5;
+    private int bajarCamara = -3;
 
     private float yVelocity = 0.0f;
     private float xVelocity=0.0f;
