@@ -44,6 +44,11 @@ using UnityEngine.UIElements;
         return numeroInicialVidas;
     }
 
+    public static int GetVidas()
+    {
+        return vidas;
+    }
+
     public void OnCollisionEnter2D(Collision2D collision) //Cuando colisiona
     {
        
