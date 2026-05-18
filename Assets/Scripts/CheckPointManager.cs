@@ -9,15 +9,11 @@ public class CheckPointManager : Singleton<CheckPointManager>
 
     private int lucesChoque = 0;
 
-    public static GameObject ultimoCP;
-    public static GameObject primerCP;
+    private GameObject ultimoCP;
+    //public static GameObject primerCP;
 
     public event Action<int> NuevoIndice;
 
-    public void Start()
-    {
-       // ultimoCP = checkPoints[cuentaCP];
-    }
     public void OnTriggerEnter2D(Collider2D collision)//Cuando el ckeckpoint colisione con un objeto de tag player
     {
         if (collision.gameObject.CompareTag("Checkpoint"))
@@ -39,17 +35,20 @@ public class CheckPointManager : Singleton<CheckPointManager>
         }
     }
 
-    public int GetIndice() //Siempre devuelve -1. Hay que mirarlo
+    public int GetIndice() 
     {
        int indice = Array.IndexOf(checkPoints, ultimoCP);
-       Debug.Log("Zona "+ indice);
-
-       
+        Debug.Log("Zona " + indice);
+        
         return indice;
     }
-    public int GetCuenta()
+   public int GetCuenta()
     {
         return cuentaCP;    
     }
-
+    public GameObject GetUltimoCP()
+    {
+        return ultimoCP;
+    }
+   
 }

@@ -4,10 +4,19 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UIElements;
 
+/*
+ Organiza las vidas.
+
+ Permite que otros scipts cambien y lean las vidas del jugador.
+ Cuando el jugador choca contra un enemigo, pierde una vida.
+ Cuando el jugador cae al agua, muere.
+ Cuando el jugador se queda sin vidas, muere.
+ Cuando el jugador muere, se llama a player.Respawn y vuelve a tener el máximo de vidas.
+ */
     public class SistemaVidas : Singleton<SistemaVidas>
 {
 
-    [SerializeField] private static int numeroInicialVidas = 3;
+    [SerializeField] private int numeroInicialVidas = 3;
     private static int vidas=3; //Vidas actuales del jugador. Cambiar luego a 3.
 
 
@@ -15,7 +24,6 @@ using UnityEngine.UIElements;
     private static Label textoVidas;
 
     public event Action<int> CambioVidas;
-
 
     void Start()
     {
@@ -31,9 +39,9 @@ using UnityEngine.UIElements;
         //Debug.Log(vidas);
     }
 
-    public static int GetVidas()
+    public int GetVidasIniciales()
     {
-        return vidas;
+        return numeroInicialVidas;
     }
 
     public void OnCollisionEnter2D(Collision2D collision) //Cuando colisiona
@@ -60,7 +68,6 @@ using UnityEngine.UIElements;
         {
             Debug.Log("aguaaa");
             MuerteJugador();
-
         }
     }
 

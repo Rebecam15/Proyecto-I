@@ -1,36 +1,26 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
+/*
+ * Respawnea al jugador cuando muere al último checkpoint por el que ha pasado.
+ * Guarda la posición de los checkpoints cuando el jugador pasa por ellos.
+    */
 public class PlayerRespawn : MonoBehaviour
 {
     private float checkPointPositionX, checkPointPositionY;
-    public static Vector2 posAnterior;
-    public static bool mismoCP=false;
+    
 
     private RecogerLuz luces;
-    private int lucesCP = 0;
 
     public void Respawn() //mueve al jugador a la posición del último checkpoint.
     {
         transform.position = new Vector2(PlayerPrefs.GetFloat("checkPointPositionX"), PlayerPrefs.GetFloat("checkPointPositionY"));
     }
     
-    public void CheckPointAlcanzado(float x, float y)//Guarda la posición del último checkpoint al que se ha llegado
+   public void CheckPointAlcanzado(float x, float y)//Guarda la posición del último checkpoint al que se ha llegado
     {
-        if (x==posAnterior.x && y==posAnterior.y) //Si es el mismo checkpoint
-        {
-            mismoCP = true;
-        }
-        else//Si es un nuevo checkpoint
-        {
-            Debug.Log("NuevoCP");
+
             PlayerPrefs.SetFloat("checkPointPositionX", x);
             PlayerPrefs.SetFloat("checkPointPositionY", y);
-            mismoCP = false;
-            luces.SetLuces(lucesCP);
-            posAnterior = new Vector2(x, y);//Guarda la posición en la variable posAnterior para despúés comparar
-        }
-        
-       
     }
 }
