@@ -8,8 +8,7 @@ using UnityEngine;
 public class PlayerRespawn : MonoBehaviour
 {
     private float checkPointPositionX, checkPointPositionY;
-    //private Vector2 posAnterior;
-    //public static bool mismoCP=false;
+    
 
     private RecogerLuz luces;
 
@@ -20,19 +19,8 @@ public class PlayerRespawn : MonoBehaviour
     
    public void CheckPointAlcanzado(float x, float y)//Guarda la posición del último checkpoint al que se ha llegado
     {
-       /* if (x==posAnterior.x && y==posAnterior.y) //Si es el mismo checkpoint
-        {
-            mismoCP = true;
-        }
-        else*///Si es un nuevo checkpoint
-        
-           // Debug.Log("NuevoCP");
+
             PlayerPrefs.SetFloat("checkPointPositionX", x);
             PlayerPrefs.SetFloat("checkPointPositionY", y);
-            //mismoCP = false;
-           // posAnterior = new Vector2(x, y);//Guarda la posición en la variable posAnterior para despúés comparar
-        
-        
-       
     }
 }

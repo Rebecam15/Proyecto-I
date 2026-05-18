@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 //Guarda datos ddel juego
@@ -7,5 +8,4 @@ public struct ProgresoJuego
 {
     public Vector3 posicion;
     public GameObject ultimoCP;
-    public int lucesRecogidas;
 }

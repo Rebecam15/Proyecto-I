@@ -1,8 +1,10 @@
 
+using System;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using System;
 using UnityEngine.Rendering;
+using UnityEngine.Rendering.UI;
 
 /*
  * Lleva la cuenta de las luces que ha recogido el jugador.
@@ -13,9 +15,10 @@ using UnityEngine.Rendering;
 public class RecogerLuz : Singleton<RecogerLuz>
 {
     private static int luces=0;
+   //[SerializeField] private GameObject[] totalLuces;
+
 
     public event Action <int> LuzRecogida;
-
     public int GetLuces()
     {
         return luces;
@@ -27,6 +30,7 @@ public class RecogerLuz : Singleton<RecogerLuz>
      
     }
 
+
     public void OnTriggerEnter2D(Collider2D other)
     {
 
@@ -34,7 +38,10 @@ public class RecogerLuz : Singleton<RecogerLuz>
         {
             luces++;
             other.gameObject.SetActive(false);
+
             LuzRecogida?.Invoke(luces);
         }
     }
+
+  
 }

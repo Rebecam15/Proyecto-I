@@ -60,7 +60,6 @@ public class ControladorDatos : MonoBehaviour
            ultimo = ultimoCP.GetUltimoCP();
            ultimo = progreso.ultimoCP;
         }     
-        luces.SetLuces(progreso.lucesRecogidas);
     }
 
     private void GuardarDatos() //Guarda la posición del jugador 
@@ -73,7 +72,6 @@ public class ControladorDatos : MonoBehaviour
         {
             progreso.ultimoCP = ultimoCP.GetUltimoCP();
         }
-        progreso.lucesRecogidas = luces.GetLuces();
      
         string progresoJson = JsonUtility.ToJson(progreso);
         PlayerPrefs.SetString("Progreso", progresoJson);
